@@ -1,2 +1,2 @@
-# GroupDocs.Redation-for-Java
-GroupDocs.Redation for Java samples, plugins and showcase
+# GroupDocs.Redaction-for-Java
+GroupDocs.Redaction for Java samples, plugins and showcase
