@@ -12,16 +12,16 @@ GroupDocs.Redaction for Java provides easy ways to manage Redaction in various f
   </a>
 </p>
 
+Directory | Description
+--------- | -----------
+[Examples](https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java/tree/master/Examples)  | Contains the package of all Java examples and sample files that will help you learn how to use product features. 
+
 ## How to Run the Examples
 Please see the following article that explains how to run the GroupDocs.Redaction for Java Console Examples.
 
 + [How to Run the Examples](https://docs.groupdocs.com/display/redactionjava/How+to+Run+Examples)
 
-Directory | Description
---------- | -----------
-[Examples](https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java/tree/master/Examples)  | Contains the package of all Java examples and sample files that will help you learn how to use product features. 
-
-#  Resources
+##  Resources
 
 + **Website:** [www.groupdocs.com](https://www.groupdocs.com)
 + **Product Home:** [GroupDocs.Redaction for Java](https://products.groupdocs.com/redaction/java)
