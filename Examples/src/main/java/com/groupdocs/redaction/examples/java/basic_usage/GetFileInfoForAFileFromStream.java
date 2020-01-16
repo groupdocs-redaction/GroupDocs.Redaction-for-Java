@@ -1,7 +1,3 @@
-// <copyright company="Aspose Pty Ltd">
-//   Copyright (C) 2011-2019 GroupDocs. All Rights Reserved.
-// </copyright>
-
 package com.groupdocs.redaction.examples.java.basic_usage;
 
 import com.groupdocs.redaction.*;

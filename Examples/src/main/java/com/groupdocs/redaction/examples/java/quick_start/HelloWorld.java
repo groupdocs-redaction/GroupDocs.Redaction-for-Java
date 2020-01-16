@@ -43,7 +43,7 @@ public class HelloWorld
         }
         finally { redactor.close(); }
         
-        System.out.println("\nSource document was redacted successfully.\nFile saved at " + outputFile.getPath());
+        System.out.println("\nSource document was redacted successfully.\nFile saved at " + outputFile.getAbsolutePath());
     }
 }
 

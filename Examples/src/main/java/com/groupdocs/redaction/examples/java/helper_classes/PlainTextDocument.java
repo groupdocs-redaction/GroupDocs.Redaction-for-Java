@@ -4,6 +4,7 @@ import com.groupdocs.redaction.integration.ITextualFormatInstance;
 import com.groupdocs.redaction.integration.DocumentFormatInstance;
 import com.groupdocs.redaction.configuration.DocumentFormatConfiguration;
 import com.groupdocs.redaction.RedactionResult;
+import com.groupdocs.redaction.options.RedactorSettings;
 import com.groupdocs.redaction.redactions.ReplacementType;
 import com.groupdocs.redaction.redactions.ReplacementOptions;
 
@@ -14,6 +15,7 @@ import com.groupdocs.redaction.redactions.ReplacementOptions;
  */
 public class PlainTextDocument extends DocumentFormatInstance implements ITextualFormatInstance
 {
+    private RedactorSettings _settings;
     private final java.util.List<String> _fileContent;
  
     public PlainTextDocument()
@@ -22,8 +24,9 @@ public class PlainTextDocument extends DocumentFormatInstance implements ITextua
     }
  
     @Override
-    public void initialize(DocumentFormatConfiguration config)
+    public void initialize(DocumentFormatConfiguration config, RedactorSettings settings)
     {
+        _settings = settings;
     }
  
     @Override

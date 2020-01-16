@@ -3,6 +3,8 @@ package com.groupdocs.redaction.examples.java.advanced_usage;
 import com.groupdocs.redaction.Redactor;
 import com.groupdocs.redaction.examples.java.Constants;
 import com.groupdocs.redaction.examples.java.helper_classes.RedactionDump;
+import com.groupdocs.redaction.options.LoadOptions;
+import com.groupdocs.redaction.options.RedactorSettings;
 import com.groupdocs.redaction.redactions.ExactPhraseRedaction;
 import com.groupdocs.redaction.redactions.ReplacementOptions;
 
@@ -15,11 +17,10 @@ public class UseRedactionCallback
 {
     public static void run() throws java.lang.Exception
     {
-        final Redactor redactor = new Redactor(Constants.SAMPLE_DOCX);
+        // Assign an instance of callback before using Redactor
+        final Redactor redactor = new Redactor(Constants.SAMPLE_DOCX, new LoadOptions(), new RedactorSettings(new RedactionDump()));
         try 
-        {
-            // Assign an instance before using Redactor
-            Redactor.setRedactionCallback(new RedactionDump());
+        {            
             redactor.apply(new ExactPhraseRedaction("John Doe", new ReplacementOptions("[personal]")));
             redactor.save();
         }
