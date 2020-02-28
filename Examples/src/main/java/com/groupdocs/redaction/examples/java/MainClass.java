@@ -68,6 +68,9 @@ public class MainClass
         //Perform image formats redactions.
         //com.groupdocs.redaction.examples.java.basic_usage.image_redactions.RedactImageArea.run();
 
+        //Remove Image metadata.
+        //com.groupdocs.redaction.examples.java.basic_usage.image_redactions.CleanImageMetadada.run();
+
         //  Advanced Usage
 
         //  Loading Documents
