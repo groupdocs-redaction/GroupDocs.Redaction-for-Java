@@ -12,9 +12,9 @@ The simplest way to save the document is it provide no parameters to Save method
 
 The following example demonstrates usage of Save() method with default options.
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor = new Redactor("sample.docx");
 try 
 {

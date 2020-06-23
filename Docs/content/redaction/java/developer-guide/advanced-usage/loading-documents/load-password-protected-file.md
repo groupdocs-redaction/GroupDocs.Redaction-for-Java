@@ -12,9 +12,9 @@ hideChildren: False
 
 In order to open password-protected documents, you have to pass your password to *LoadOptions* class constructor or assign it to its *Password* property of an instance of *LoadOptions* class:
 
-**Java**
 
-```csharp
+
+```java
         LoadOptions loadOptions = new LoadOptions("mypassword");
         final Redactor redactor = new Redactor("protected_sample.docx", loadOptions);
         try 

@@ -20,9 +20,9 @@ The following code examples demonstrate how to get document information.
 
 ### Get file info for a file from local disk
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor = new Redactor(stream);
 try 
 {
@@ -35,9 +35,9 @@ finally { redactor.close(); }
 
 ### Get file info for a file from Stream
 
-**Java**
 
-```csharp
+
+```java
 FileInputStream stream = new FileInputStream("D:\\Sample.docx");
 final Redactor redactor = new Redactor("D:\Sample.docx");
 try 

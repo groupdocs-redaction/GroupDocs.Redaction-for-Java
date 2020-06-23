@@ -14,9 +14,9 @@ hideChildren: False
 
 The following example demonstrates how to open a document from local disc:
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor = new Redactor("sample.docx");
 try 
 {

@@ -30,7 +30,7 @@ The license can be loaded from a file or stream object.
 
 The code below will explain how to apply product license.
 
-```csharp
+```java
 // For complete examples and data files, please go to https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java
 // Setup the license.
 License lic = new License();
@@ -41,7 +41,7 @@ lic.setLicense(licensePath);
 
 The following example shows how to load a license from a stream.
 
-```csharp
+```java
 // For complete examples and data files, please go to https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java
 final FileInputStream stream = new FileInputStream(licensePath);
 try 
@@ -70,7 +70,7 @@ Here are the simple steps to use the `Metered` class.
 
 Following is the sample code demonstrating how to use `Metered` class.
 
-```csharp
+```java
 // For complete examples and data files, please go to https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java
 String privateKey = "[Your Dynabic.Metered private key]";
 String publicKey = "[Your Dynabic.Metered public key]";

@@ -16,7 +16,7 @@ First, you need to specify GroupDocs repository configuration/location in your M
 
 **XML**
 
-```csharp
+```java
 <repositories>
 	<repository>
 		<id>GroupDocsJavaAPI</id>
@@ -32,7 +32,7 @@ Then define GroupDocs.Redaction for Java API dependency in your `pom.xml` as 
 
 **XML**
 
-```csharp
+```java
 <dependencies>
     <dependency>
         <groupId>com.groupdocs</groupId>

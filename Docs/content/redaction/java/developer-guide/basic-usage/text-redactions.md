@@ -12,9 +12,9 @@ hideChildren: False
 
 In the example below, we apply textual redaction, replacing personal exact phrase "John Doe" with "\[personal\]" (or any exemption code):
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor = new Redactor("sample.docx");
 try 
 {
@@ -26,9 +26,9 @@ finally { redactor.close(); }
 
 By default, search for exact phase is case insensitive.For a case-sensitive redaction, there is a constructor parameter and corresponding public property:
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor = new Redactor("sample.docx");
 try
 {
@@ -40,9 +40,9 @@ finally { redactor.close(); }
 
 If you need a color box over the redacted text, you can use color instead of replacement string. The redaction will erase matched text and put a rectangle of the specified color in place of redacted text:
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor = new Redactor("sample.docx");
 try
 {
@@ -56,9 +56,9 @@ finally { redactor.close(); }
 
 Behind the scenes, "exact phrase" redaction works though regular expressions, which are the baseline approach for redaction. In the example below, we redact out any text, matching "2 digits, space or nothing, 2 digits, again space and 6 digits" with a blue color box:
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor = new Redactor("sample.docx");
 try
 {

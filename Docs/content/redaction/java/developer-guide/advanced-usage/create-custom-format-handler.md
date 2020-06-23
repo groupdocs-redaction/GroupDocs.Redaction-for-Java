@@ -22,9 +22,9 @@ Each of these interfaces is optional, i.e. you don't have to implement all of th
 
 Below, we create a *DocumentFormatInstance* class for plain text document, supporting only textual redactions:
 
-**Java**
 
-```csharp
+
+```java
 import com.groupdocs.redaction.options.RedactorSettings;
 
 public class PlainTextDocument extends DocumentFormatInstance implements ITextualFormatInstance
@@ -95,9 +95,9 @@ public class PlainTextDocument extends DocumentFormatInstance implements ITextua
 
 In order to use this class, we will need to add it to pre-configured formats, e.g. as a handler for logs ("\*.log"):
 
-**Java**
 
-```csharp
+
+```java
 DocumentFormatConfiguration format = new DocumentFormatConfiguration();
 format.setExtensionFilter(".log");
 format.setDocumentType(typeof(PlainTextDocument));
@@ -110,9 +110,9 @@ config.getAvailableFormats().add(format);
 
 If your format supports security options like password protection, you'll have to pass true or false to *SetAccessGranted* method of *DocumentFormatInstance* class in your override of *Load* method and throw IncorrectPasswordException or PasswordRequiredException, if applicable. For instance:
 
-**Java**
 
-```csharp
+
+```java
 @Override
 public void load(java.io.InputStream input) throws java.lang.Exception
 {

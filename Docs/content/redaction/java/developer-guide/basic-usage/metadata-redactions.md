@@ -12,9 +12,9 @@ hideChildren: False
 
 Base functionality for all redactions, derived from MetadataRedaction base class is *metadata filtering* and it is mandatory for metadata redactions. It uses flagged enumeration *MetadataFilter*s, containing items for most frequent metadata entries. You can set the filter to *All*, or any combination of metadata. For instance, the example below sets filter to *Author*, *Manager* and *NameOfApplication* - for textual redaction or cleaning them out:
 
-**Java**
 
-```csharp
+
+```java
 // redaction derived from MetadataRedaction
 redaction.setFilter(MetadataFilters.Author | MetadataFilters.Manager | MetadataFilters.NameOfApplication);
 ```
@@ -51,9 +51,9 @@ Below is the table with full list of *MetadataFilters* items:
 
 You can replace all or specific metadata in the document with empty (blank or minimal) values. The example below blanks out all properties of the document:
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor  = new Redactor("Sample.docx");
 try 
 {
@@ -73,9 +73,9 @@ You can specify *MetadataFilter.All* or use default constructor to blank out a
 
 You can use *MetadataSearchRedaction* to remove sensitive data from document's metadata using regular expressions. For instance, we can remove any mention of "Company Ltd.":
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor  = new Redactor("Sample.docx");
 try 
 {
@@ -91,9 +91,9 @@ finally { redactor.close(); }
 
 First argument is regular expression, second is a replacement string. You can also set scope for redaction by setting filter, e.g. to *MetadataFilter.Company*. - it will leave the regular expressions matches undone in all metadata items, except "Company" property:
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor  = new Redactor("Sample.docx");
 try 
 {

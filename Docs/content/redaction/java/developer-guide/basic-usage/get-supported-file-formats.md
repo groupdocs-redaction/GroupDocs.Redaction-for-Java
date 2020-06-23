@@ -17,9 +17,9 @@ GroupDocs.Redaction allows to get the list of all supported file formats by thes
 
 The following example demonstrates how to get supported file formats list.
 
-**Java**
 
-```csharp
+
+```java
 Iterable<FileType> supportedFileTypes = FileType.getSupportedFileTypes();
 Iterator iterator = supportedFileTypes.iterator();      
 while (iterator.hasNext())

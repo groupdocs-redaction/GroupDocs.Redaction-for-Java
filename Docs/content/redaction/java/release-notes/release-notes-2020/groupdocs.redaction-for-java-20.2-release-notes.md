@@ -37,11 +37,11 @@ There are no changes in public API
 
 The following example demonstrates how to edit exif data (erase them) from a photo or any other image:
 
-**Java**
 
-**java**
 
-```csharp
+
+
+```java
 final Redactor redactor  = new Redactor("D:\\photo.jpg");
 try
 {

@@ -14,9 +14,9 @@ As an alternative to a local file, *Redactor* can open a document from stream.
 
 The following example demonstrates how to load and redact a document using Stream:
 
-**Java**
 
-```csharp
+
+```java
         final FileInputStream stream = new FileInputStream("sample.docx");
         try 
         {

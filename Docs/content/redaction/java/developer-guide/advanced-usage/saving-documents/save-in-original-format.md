@@ -10,9 +10,9 @@ hideChildren: False
 ---
 The following example demonstrates how to save file in its original format with current date as a suffix:
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor = new Redactor("sample.docx");
 try 
 {

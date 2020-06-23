@@ -23,9 +23,9 @@ GroupDocs.Redaction comes with the following redaction types:
 
 Applying redaction to a document is done through *Redactor.apply* method. As a result, you receive *RedactorChangeLog* instance, containing a log entry for each redaction applied. The entry contains reference to *Redacton* instance including its options, status of the operation (see below) and textual descriptions when applicable. If at least one redaction failed, you will see *Status* == *RedactionStatus.Failed*:
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor = new Redactor("sample.docx");
 try 
 {
@@ -46,9 +46,9 @@ All possible statuses are listed in this table:
 
 For detailed information you have to iterate through redaction log entries in *RedactorChangeLog.RedactionLog* and check for ErrorMessage property of any items with status other than *Applied*:
 
-**Java**
 
-```csharp
+
+```java
 RedactorChangeLog summary = redactor.apply( ... );
 if (result.getStatus() != RedactionStatus.Failed)
 {
@@ -67,9 +67,9 @@ if (result.getStatus() != RedactionStatus.Failed)
 
 You can apply as much redactions as you need in a single call to *Redactor.Apply()* method, since its overload accepts an array of redactions and redaction policy. In this case, redactions will be applied in the same order as they appear in the array. As an alternative to specifying redaction sets in your code, you can create an XML file with redaction policy, as described [here]({{< ref "redaction/java/developer-guide/basic-usage/redaction-basics.md" >}}).
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor = new Redactor("sample.docx");
 try 
 {

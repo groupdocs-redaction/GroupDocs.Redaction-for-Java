@@ -12,9 +12,9 @@ hideChildren: False
 
 Saving document as a rasterized PDF, you can specify starting page index (zero based) and the number of pages from this index to save. Also, you can change the Compliance level from PDF/A-1b, which is used by default, to PDF/A-1a:
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor = new Redactor("MultipageSample.docx");
 try 
 {

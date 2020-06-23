@@ -44,9 +44,9 @@ Method **String getDescription()** has been added to **com.groupdocs.redactio
 
 The following example demonstrates how to set instances of **MyCustomLogger** and **MyRedactionCallback** classes:
 
-**Java**
 
-```csharp
+
+```java
 Redactor redactor = new Redactor("\\SampleFile.doc", new LoadOptions(), 
 	new RedactorSettings(new MyCustomLogger(), new MyRedactionCallback())))
 redactor.apply(new ExactPhraseRedaction("John Doe"), new ReplacementOptions(Color.RED));

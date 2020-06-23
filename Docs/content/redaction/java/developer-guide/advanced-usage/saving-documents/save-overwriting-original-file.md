@@ -10,9 +10,9 @@ hideChildren: False
 ---
 The following example demonstrates how to save the redacted document, replacing an original file:
 
-**Java**
 
-```csharp
+
+```java
 // Make a copy of sample file
 Files.copy(new File("Sample.docx").toPath(), new File("OverwrittenSample.docx").toPath(), StandardCopyOption.REPLACE_EXISTING);
 // Apply redaction

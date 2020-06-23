@@ -17,9 +17,9 @@ If you have a document with one or more tables, organized into worksheets (one t
 
 If no filters are set, redactions affects the entire document. All indices are zero-based. Below is an example, where we use all filters, to redact second column with emails (e.g. loaded from database) on a worksheet "Customers", leaving untouched all other emails in the document:
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor  = new Redactor("sample.xlsx");
 try 
 {

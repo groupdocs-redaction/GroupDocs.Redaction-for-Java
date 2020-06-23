@@ -10,9 +10,9 @@ hideChildren: False
 ---
 The following example demonstrates how to save the document as a rasterized PDF file:
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor = new Redactor(Constants.SAMPLE_DOCX);
 try 
 {

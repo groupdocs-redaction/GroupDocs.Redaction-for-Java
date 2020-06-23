@@ -103,7 +103,7 @@ The following example demonstrates how to redact Microsoft Office Word document
 
 **Old coding style**
 
-```csharp
+```java
 // Load the file
 Document doc = Redactor.load("Documents/Doc/sample.docx");
 //Perform redaction using exact phrase
@@ -120,7 +120,7 @@ doc.close();
 
 **New coding style**
 
-```csharp
+```java
 // Load the file
 Redactor redactor = new Redactor("Documents/Doc/sample.docx");
 //Perform redaction using exact phrase

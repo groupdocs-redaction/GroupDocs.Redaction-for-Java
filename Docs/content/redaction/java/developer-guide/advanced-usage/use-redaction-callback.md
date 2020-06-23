@@ -12,9 +12,9 @@ In order to reject specific changes during redaction process or to keep a full l
 
 Below, we create a callback class, dumping changes to system console:
 
-**Java**
 
-```csharp
+
+```java
 public class RedactionDump implements IRedactionCallback
 {
     public RedactionDump()
@@ -37,9 +37,9 @@ public class RedactionDump implements IRedactionCallback
 
 The instance of this class is to be passed to a constructor of the *Redactor* class:
 
-**Java**
 
-```csharp
+
+```java
 // Assign an instance of callback before using Redactor
 final Redactor redactor = new Redactor("\\Sample.docx", new LoadOptions(), new RedactorSettings(new RedactionDump()));
 try 

@@ -14,7 +14,7 @@ Below is an example of redaction policy XML file (code properties mapping is obv
 
 **RedactionPolicy.xml**
 
-```csharp
+```java
 <?xml version="1.0" encoding="utf-8"?>  
 <redactionPolicy xmlns="http://www.groupdocs.com/redaction">  
   <regexRedaction regularExpression="(dolor)" actionType="ReplaceString" replacement="foobar" />  
@@ -38,9 +38,9 @@ You can have as much policies, as you need, loading them to redact your document
 
 An example below shows how to apply redaction policy to all files within given inbound folder, and save to one of outbound folders - for successfully updated files and for failed ones. Current date and time is used as a part of output file name:
 
-**Java**
 
-```csharp
+
+```java
 RedactionPolicy policy = RedactionPolicy.load("Policy_file.xml");
 for (final File fileEntry : new File("\Inbound\").listFiles())
 {

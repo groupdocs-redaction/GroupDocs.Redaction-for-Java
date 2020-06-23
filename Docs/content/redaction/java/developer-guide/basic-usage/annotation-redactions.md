@@ -12,9 +12,9 @@ hideChildren: False
 
 You can use GroupDocs.Redaction to remove all or specific comments and other annotations from the document. For example, we can remove all comments from the document, containing texts like "use", "show" or "describe" in its body:
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor = new Redactor("annotated_sample.xlsx");
 try 
 {
@@ -33,9 +33,9 @@ You can use constructor without arguments to remove all annotations within the d
 
 Instead of removing all or specific annotations, you can remove sensitive data from the annotation text. For instance, we can remove all mentions of "John" in the given document, e.g.:
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor = new Redactor("annotated_sample.xlsx");
 try 
 {

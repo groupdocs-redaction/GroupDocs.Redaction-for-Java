@@ -14,9 +14,9 @@ Although GroupDocs.Redaction for Java does not support OCR at this moment, so yo
 
 In order to do this, you have to use *ImageAreaRedaction* class:
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor  = new Redactor("D:\\test.jpg");
 try 
 {
@@ -44,9 +44,9 @@ GroupDocs.Redaction for Java allows you to change image metadata (e.g. edit EXI
 
 The following example demonstrates how to edit exif data (erase them) from a photo or any other image:
 
-**Java**
 
-```csharp
+
+```java
 final Redactor redactor  = new Redactor("D:\\photo.jpg");
 try 
 {

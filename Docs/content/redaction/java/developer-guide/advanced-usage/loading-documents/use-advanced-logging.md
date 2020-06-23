@@ -12,9 +12,9 @@ hideChildren: False
 
 You can implement *ILogger* interface from com.groupdocs.redaction.options package. This interface requires to implement three methods:
 
-**Java**
 
-```csharp
+
+```java
 import com.groupdocs.redaction.options.ILogger;
 import java.util.ArrayList;
 /**
@@ -54,9 +54,9 @@ public class CustomLogger implements ILogger
 
 Once implemented, you can use it to track error log records:
 
-**Java**
 
-```csharp
+
+```java
 CustomLogger logger = new CustomLogger();
 final Redactor redactor = new Redactor(Constants.SAMPLE_DOCX, new LoadOptions(), new RedactorSettings(logger));
 try 
