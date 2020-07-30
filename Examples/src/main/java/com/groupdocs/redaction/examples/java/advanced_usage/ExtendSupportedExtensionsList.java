@@ -9,7 +9,7 @@ import com.groupdocs.redaction.redactions.ReplacementOptions;
 
 /**
  * <p>
- * The following example demonstrates 
+ * The following example demonstrates how to add a custom file extension to the list of supported extensions.
  * </p>
  */
 public class ExtendSupportedExtensionsList

@@ -36,9 +36,9 @@ try
 finally { redactor.close(); }
 ```
 
-If the redaction cannot be applied to this type of files, e.g. MS Word document, *RedactorChangeLog.Status* will be *RedactionStatus.Skipped*.
+If the redaction cannot be applied to this type of files, e.g. MS Word document, *RedactorChangeLog.getStatus()* will be *RedactionStatus.Skipped*.
 
-### Clear image metadata
+### Clean image metadata
 
 GroupDocs.Redaction for Java allows you to change image metadata (e.g. edit EXIF data of an image or act as an "EXIF eraser").
 
@@ -60,4 +60,28 @@ try
 finally { redactor.close(); }
 ```
 
-If the redaction cannot be applied to this type of files, e.g. BMP image, *RedactorChangeLog.Status* will be *RedactionStatus.Skipped*.
+If the redaction cannot be applied to this type of files, e.g. BMP image, *RedactorChangeLog.getStatus()* will be *RedactionStatus.Skipped*.
+
+## Redact embedded images
+
+You can redact image area within all kinds of embedded images inside a document. You have to use *ImageAreaRedaction* class. The following example demonstrates how to redact all embedded images within a Microsoft Word document:
+
+
+
+```java
+final Redactor redactor = new Redactor("D:\\sample.docx");
+try 
+{
+    java.awt.Point samplePoint = new java.awt.Point(516, 311);
+    java.awt.Dimension sampleSize = new java.awt.Dimension(170, 35);
+    RedactorChangeLog result = redactor.apply(new ImageAreaRedaction(samplePoint,
+        new RegionReplacementOptions(java.awt.Color.BLUE, sampleSize)));
+    if (result.getStatus() != RedactionStatus.Failed)
+    {
+        redactor.save();
+    };
+}
+finally { redactor.close(); }
+```
+
+If the redaction cannot be applied to this type of files, e.g. a spreadsheet document, *RedactorChangeLog.getStatus()* will be *RedactionStatus.Skipped*.

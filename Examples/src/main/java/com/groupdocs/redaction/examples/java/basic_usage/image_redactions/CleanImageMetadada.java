@@ -1,4 +1,4 @@
-﻿package com.groupdocs.redaction.examples.java.basic_usage.image_redactions;
+package com.groupdocs.redaction.examples.java.basic_usage.image_redactions;
 
 import com.groupdocs.redaction.examples.java.Constants;
 

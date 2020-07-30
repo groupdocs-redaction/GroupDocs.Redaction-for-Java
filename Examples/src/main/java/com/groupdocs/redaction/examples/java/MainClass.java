@@ -71,6 +71,9 @@ public class MainClass
         //Remove Image metadata.
         //com.groupdocs.redaction.examples.java.basic_usage.image_redactions.CleanImageMetadada.run();
 
+        //Redact embedded images.
+        //com.groupdocs.redaction.examples.java.basic_usage.image_redactions.RedactEmbeddedImages.run();
+
         //  Advanced Usage
 
         //  Loading Documents
@@ -113,6 +116,9 @@ public class MainClass
 
         //configure redactions in XML and apply them to any document as a single redaction profile.
         //com.groupdocs.redaction.examples.java.advanced_usage.UseRedactionPolicy.run();
+
+        //Create a PDF document with page image redactions 
+        //com.groupdocs.redaction.examples.java.advanced_usage.CreatePDFWithImageRedaction.run();
         
         System.out.println("Operation completed...");
     }

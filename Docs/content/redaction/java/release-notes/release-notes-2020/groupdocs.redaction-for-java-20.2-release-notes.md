@@ -2,7 +2,7 @@
 id: groupdocs-redaction-for-java-20-2-release-notes
 url: redaction/java/groupdocs-redaction-for-java-20-2-release-notes
 title: GroupDocs.Redaction for Java 20.2 Release Notes
-weight: 1
+weight: 2
 description: ""
 keywords: 
 productName: GroupDocs.Redaction for Java
