@@ -73,6 +73,18 @@ public class MainClass
 
         //Redact embedded images.
         //com.groupdocs.redaction.examples.java.basic_usage.image_redactions.RedactEmbeddedImages.run();
+        
+        // Get supported file formats.
+        //com.groupdocs.redaction.examples.java.basic_usage.GetSupportedFileFormats.run();
+
+        // Get document info from local disc.
+        //com.groupdocs.redaction.examples.java.basic_usage.GetFileInfoForAFileFromLocalDisk.run();
+
+        // Get document info from stream.
+        //com.groupdocs.redaction.examples.java.basic_usage.GetFileInfoForAFileFromStream.run();
+
+        // Get document page preview.
+        //com.groupdocs.redaction.examples.java.basic_usage.GetDocumentPagePreview.run();
 
         //  Advanced Usage
 
@@ -114,7 +126,10 @@ public class MainClass
         //Create a custom file foramt 
         //com.groupdocs.redaction.examples.java.advanced_usage.CreateCustomFormatHandler.run();
 
-        //configure redactions in XML and apply them to any document as a single redaction profile.
+        //Save a set of redactions as an XML policy.
+        //com.groupdocs.redaction.examples.java.advanced_usage.CreateRedactionPolicy.run();
+        
+        //Configure redactions in XML and apply them to any document as a single redaction profile.
         //com.groupdocs.redaction.examples.java.advanced_usage.UseRedactionPolicy.run();
 
         //Create a PDF document with page image redactions 

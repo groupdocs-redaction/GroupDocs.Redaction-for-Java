@@ -45,7 +45,7 @@
 	 <dependency>
 	  <groupId>com.groupdocs</groupId>
 	  <artifactId>groupdocs-redaction</artifactId>
-	  <version>20.7</version>
+	  <version>20.11</version>
 	 </dependency>
 	</dependencies>
 	<repositories>

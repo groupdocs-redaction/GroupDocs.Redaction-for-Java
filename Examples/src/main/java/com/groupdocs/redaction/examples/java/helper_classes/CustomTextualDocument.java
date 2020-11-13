@@ -13,12 +13,12 @@ import com.groupdocs.redaction.redactions.ReplacementOptions;
  * This is an example of DocumentFormatInstance-derived format handler public class for plain text documents.
  * </p>
  */
-public class PlainTextDocument extends DocumentFormatInstance implements ITextualFormatInstance
+public class CustomTextualDocument extends DocumentFormatInstance implements ITextualFormatInstance
 {
     private RedactorSettings _settings;
     private final java.util.List<String> _fileContent;
  
-    public PlainTextDocument()
+    public CustomTextualDocument()
     {
         _fileContent = new java.util.ArrayList<>();
     }

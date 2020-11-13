@@ -2,7 +2,7 @@
 id: get-supported-file-formats
 url: redaction/java/get-supported-file-formats
 title: Get supported file formats
-weight: 2
+weight: 1
 description: ""
 keywords: 
 productName: GroupDocs.Redaction for Java

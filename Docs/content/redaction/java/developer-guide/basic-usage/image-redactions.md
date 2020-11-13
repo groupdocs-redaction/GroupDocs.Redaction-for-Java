@@ -2,7 +2,7 @@
 id: image-redactions
 url: redaction/java/image-redactions
 title: Image redactions
-weight: 4
+weight: 9
 description: ""
 keywords: 
 productName: GroupDocs.Redaction for Java

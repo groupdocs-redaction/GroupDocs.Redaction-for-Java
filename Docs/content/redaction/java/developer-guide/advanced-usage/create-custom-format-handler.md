@@ -17,22 +17,23 @@ If format is not supported, you will need to implement a handler for it by inher
 | *IAnnotatedDocument* | Required for annotation redactions, changes or deletes annotations, matching given regular expression |
 | *IRasterizableDocument* | Required to rasterize (save document as a PDF with page images) |
 | *IImageFormatInstance* | Required for raster image format redactions, based on area top-left corner coordinates and area size |
+| *IPreviewable* | Required to provide document general information and preview functionality |
 
 Each of these interfaces is optional, i.e. you don't have to implement all of them, e.g. *IImageFormatInstance* - if you don't need its functionality or *IMetadataAccess*, if your format does not support metadata.
 
-Below, we create a *DocumentFormatInstance* class for plain text document, supporting only textual redactions:
+Below, we create a *DocumentFormatInstance* class with custom logic for textual documents processing, supporting only textual redactions:
 
 
 
 ```java
 import com.groupdocs.redaction.options.RedactorSettings;
 
-public class PlainTextDocument extends DocumentFormatInstance implements ITextualFormatInstance
+public class CustomTextualDocument extends DocumentFormatInstance implements ITextualFormatInstance
 {
     private RedactorSettings _settings;
     private final java.util.List<String> _fileContent;
  
-    public PlainTextDocument()
+    public CustomTextualDocument()
     {
         _fileContent = new java.util.ArrayList<>();
     }
@@ -93,14 +94,14 @@ public class PlainTextDocument extends DocumentFormatInstance implements ITextua
 }
 ```
 
-In order to use this class, we will need to add it to pre-configured formats, e.g. as a handler for logs ("\*.log"):
+In order to use this class, we will need to add it to pre-configured formats, e.g. as a handler for dump files ("\*.dump"):
 
 
 
 ```java
 DocumentFormatConfiguration format = new DocumentFormatConfiguration();
-format.setExtensionFilter(".log");
-format.setDocumentType(typeof(PlainTextDocument));
+format.setExtensionFilter(".dump");
+format.setDocumentType(typeof(CustomTextualDocument));
 
 RedactorConfiguration config = DocumentFormatInstance.getDefaultConfiguration();
 config.getAvailableFormats().add(format);

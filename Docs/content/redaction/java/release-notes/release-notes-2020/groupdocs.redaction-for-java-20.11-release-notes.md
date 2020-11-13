@@ -23,7 +23,7 @@ There are the following improvements in this release:
 
 | Key | Summary | Category |
 | --- | --- | --- |
-| REDACTIONJAVA-107 | Saving RedactionPolicy.xml file in Java | Improvement |
+| REDACTIONJAVA-107 | Saving RedactionPolicy.xml file | Improvement |
 | REDACTIONJAVA-108 | Add support for HTML documents and Markdown files | Improvement |
 | REDACTIONJAVA-109 | Add built-in support for plain text format | Improvement |
 | REDACTIONJAVA-110 | Improve PDF preview generation | Improvement |

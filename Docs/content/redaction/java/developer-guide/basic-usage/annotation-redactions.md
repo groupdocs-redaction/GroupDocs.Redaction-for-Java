@@ -2,7 +2,7 @@
 id: annotation-redactions
 url: redaction/java/annotation-redactions
 title: Annotation redactions
-weight: 3
+weight: 7
 description: ""
 keywords: 
 productName: GroupDocs.Redaction for Java

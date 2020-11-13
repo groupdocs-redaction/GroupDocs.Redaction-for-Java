@@ -55,12 +55,13 @@ public class Constants
     public static String SAMPLE_EXIF_JPG = getSampleFilePath("Image/exif.jpg");
 
     // Text files
-    public static String SAMPLE_TXT = getSampleFilePath("Doc/sample.txt");
+    public static String SAMPLE_DUMP = getSampleFilePath("Doc/sample.dump");
 
     // Policy test files
     public static String POLICY_FILE = getSampleFilePath("Bulk/RedactionPolicy.xml");
     public static String POLICY_INBOUND = getSampleFilePath("Bulk/Inbound");
     public static String POLICY_OUTBOUND_DONE = getSampleFilePath("Bulk/Outbound/Done");
     public static String POLICY_OUTBOUND_FAILED = getSampleFilePath("Bulk/Outbound/Failed");
+    public static String POLICY_SAVE = getSampleFilePath("SamplePolicy.xml");
 }
 

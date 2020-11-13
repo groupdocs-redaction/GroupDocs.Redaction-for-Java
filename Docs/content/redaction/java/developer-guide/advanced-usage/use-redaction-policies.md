@@ -33,6 +33,19 @@ Below is an example of redaction policy XML file (code properties mapping is obv
   <imageAreaRedaction pointX="110" pointY="120" width="60" height="20" color="Magenta"  />  
 </redactionPolicy> 
 ```
+You can use RedactionPolicy.save() method to create XML documents of this structure, configuring redactions in runtime.
+
+The following example demonstrates how to save a *RedactionPolicy* to an XML file.
+
+```java
+RedactionPolicy policy = new RedactionPolicy(new Redaction[] {
+    new ExactPhraseRedaction("Redaction", new ReplacementOptions("[Product]")),
+    new RegexRedaction("\\d{2}\\s*\\d{2}[^\\d]*\\d{6}", new ReplacementOptions(java.awt.Color.BLUE)),
+    new DeleteAnnotationRedaction(),
+    new EraseMetadataRedaction(MetadataFilters.All)
+});
+policy.save("MyPolicyFile.xml");
+```
 
 You can have as much policies, as you need, loading them to redact your documents.
 

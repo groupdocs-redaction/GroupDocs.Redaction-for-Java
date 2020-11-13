@@ -2,7 +2,7 @@
 id: get-file-info
 url: redaction/java/get-file-info
 title: Get file info
-weight: 1
+weight: 2
 description: ""
 keywords: 
 productName: GroupDocs.Redaction for Java

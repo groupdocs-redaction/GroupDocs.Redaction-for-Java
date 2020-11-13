@@ -2,7 +2,7 @@
 id: text-redactions
 url: redaction/java/text-redactions
 title: Text redactions
-weight: 8
+weight: 5
 description: ""
 keywords: 
 productName: GroupDocs.Redaction for Java

@@ -2,7 +2,7 @@
 id: redaction-basics
 url: redaction/java/redaction-basics
 title: Redaction Basics
-weight: 6
+weight: 4
 description: ""
 keywords: 
 productName: GroupDocs.Redaction for Java

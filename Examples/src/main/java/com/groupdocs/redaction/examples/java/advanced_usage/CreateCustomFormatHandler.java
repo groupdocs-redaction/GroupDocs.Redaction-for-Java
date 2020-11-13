@@ -7,7 +7,7 @@ import com.groupdocs.redaction.options.SaveOptions;
 import com.groupdocs.redaction.redactions.ExactPhraseRedaction;
 import com.groupdocs.redaction.redactions.ReplacementOptions;
 
-import com.groupdocs.redaction.examples.java.helper_classes.PlainTextDocument;
+import com.groupdocs.redaction.examples.java.helper_classes.CustomTextualDocument;
 import com.groupdocs.redaction.examples.java.Constants;
 
 /**
@@ -20,14 +20,14 @@ public class CreateCustomFormatHandler
     public static void run() throws java.lang.Exception
     {
         DocumentFormatConfiguration config = new DocumentFormatConfiguration();
-        config.setExtensionFilter(".txt");
-        config.setDocumentType(PlainTextDocument.class);
+        config.setExtensionFilter(".dump");
+        config.setDocumentType(CustomTextualDocument.class);
         DocumentFormatInstance.getDefaultConfiguration().getAvailableFormats().add(config);
-        final Redactor redactor = new Redactor(Constants.SAMPLE_TXT);
+        final Redactor redactor = new Redactor(Constants.SAMPLE_DUMP);
         try 
         {
             // Here we can use document instance to perform redactions
-            redactor.apply(new ExactPhraseRedaction("John Doe", new ReplacementOptions("[personal]")));
+            redactor.apply(new ExactPhraseRedaction("dolor", false, new ReplacementOptions("[redacted]")));
             // Save the document to "*_AnyText.*" (e.g. timestamp instead of "AnyText") in its file name without rasterization
             redactor.save(new SaveOptions(false, "AnyText"));
         }

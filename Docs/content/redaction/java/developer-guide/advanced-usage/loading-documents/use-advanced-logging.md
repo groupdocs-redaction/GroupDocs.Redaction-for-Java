@@ -1,14 +1,13 @@
 ---
 id: use-advanced-logging
 url: redaction/java/use-advanced-logging
-title: Use Advanced Logging
+title: Use advanced logging
 weight: 4
 description: ""
 keywords: 
 productName: GroupDocs.Redaction for Java
 hideChildren: False
 ---
-### Use Advanced Logging
 
 You can implement *ILogger* interface from com.groupdocs.redaction.options package. This interface requires to implement three methods:
 

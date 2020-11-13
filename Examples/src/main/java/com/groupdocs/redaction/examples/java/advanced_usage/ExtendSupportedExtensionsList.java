@@ -17,13 +17,13 @@ public class ExtendSupportedExtensionsList
     public static void run() throws java.lang.Exception
     {
         RedactorConfiguration config = DocumentFormatInstance.getDefaultConfiguration();
-        DocumentFormatConfiguration docxSettings = config.findFormat(".docx");
-        docxSettings.setExtensionFilter(docxSettings.getExtensionFilter() + ",.txt");
-        final Redactor redactor = new Redactor(Constants.SAMPLE_TXT);
+        DocumentFormatConfiguration settings = config.findFormat(".txt");
+        settings.setExtensionFilter(settings.getExtensionFilter() + ",.dump");
+        final Redactor redactor = new Redactor(Constants.SAMPLE_DUMP);
         try 
         {
             // Here we can use document instance to perform redactions
-            redactor.apply(new ExactPhraseRedaction("John Doe", new ReplacementOptions("[personal]")));
+            redactor.apply(new ExactPhraseRedaction("dolor", false, new ReplacementOptions("[redacted]")));
             redactor.save();
         }
         finally { redactor.close(); }

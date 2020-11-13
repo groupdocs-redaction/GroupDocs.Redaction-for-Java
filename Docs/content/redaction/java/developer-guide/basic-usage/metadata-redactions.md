@@ -2,7 +2,7 @@
 id: metadata-redactions
 url: redaction/java/metadata-redactions
 title: Metadata redactions
-weight: 5
+weight: 6
 description: ""
 keywords: 
 productName: GroupDocs.Redaction for Java
