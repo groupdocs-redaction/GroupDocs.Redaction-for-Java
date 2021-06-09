@@ -10,7 +10,6 @@ GroupDocs.Redaction provides a single format-independent interface to [Remove Se
 
 Directory | Description
 --------- | -----------
-[Docs](https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java/tree/master/Docs)  | Product documentation containing the Developer's Guide, Release Notes and more.
 [Examples](https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java/tree/master/Examples)  | Java examples and sample documents for you to get started quickly. 
 
 ## Document Redaction Library
