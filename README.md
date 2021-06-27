@@ -10,7 +10,6 @@ GroupDocs.Redaction provides a single format-independent interface to [Remove Se
 
 Directory | Description
 --------- | -----------
-[Docs](https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java/tree/master/Docs)  | Product documentation containing the Developer's Guide, Release Notes and more.
 [Examples](https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java/tree/master/Examples)  | Java examples and sample documents for you to get started quickly. 
 
 ## Document Redaction Library
@@ -57,4 +56,4 @@ try
 finally { redactor.close(); }
 ```
 
-[Home](https://www.groupdocs.com/) | [Product Page](https://products.groupdocs.com/redaction/java) | [Documentation](https://docs.groupdocs.com/redaction/java/) | [Demos](https://products.groupdocs.app/redaction/family) | [API Reference](https://apireference.groupdocs.com/java/redaction) | [Examples](https://github.com/groupdocs-redaction/GroupDocs.redaction-for-Java/tree/master/Examples) | [Blog](https://blog.groupdocs.com/category/redaction/) | [Free Support](https://forum.groupdocs.com/c/redaction) | [Temporary License](https://purchase.groupdocs.com/temporary-license)
+[Home](https://www.groupdocs.com/) | [Product Page](https://products.groupdocs.com/redaction/java) | [Documentation](https://docs.groupdocs.com/redaction/java/) | [Demos](https://products.groupdocs.app/redaction/family) | [API Reference](https://apireference.groupdocs.com/java/redaction) | [Examples](https://github.com/groupdocs-redaction/GroupDocs.redaction-for-Java/tree/master/Examples) | [Blog](https://blog.groupdocs.com/category/redaction/) | [Search](https://search.groupdocs.com/) | [Free Support](https://forum.groupdocs.com/c/redaction) | [Temporary License](https://purchase.groupdocs.com/temporary-license)
