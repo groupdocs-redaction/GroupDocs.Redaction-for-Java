@@ -117,6 +117,13 @@ public class MainClass
         //Save only specific pages of thge Document as PDF 
         //com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.SelectSpecificPagesForRasterizedPDF.run();
 
+        // Using OCR
+        // Use Aspose.OCR for Cloud SDK
+        //com.groupdocs.redaction.examples.java.advanced_usage.using_ocr.UseAsposeOCRForCloud.run();
+
+        // Use Microsoft Azure Cognitive Services Computer Vision
+        //com.groupdocs.redaction.examples.java.advanced_usage.using_ocr.UseMicrosoftAzureComputerVision.run();
+
         //Adding custom file extensions
         //com.groupdocs.redaction.examples.java.advanced_usage.ExtendSupportedExtensionsList.run();
 
