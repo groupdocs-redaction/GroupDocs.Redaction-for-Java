@@ -74,6 +74,13 @@ public class MainClass
         //Redact embedded images.
         //com.groupdocs.redaction.examples.java.basic_usage.image_redactions.RedactEmbeddedImages.run();
         
+        //  Remove Page Redactions
+        //Remove a range of pages.
+        //com.groupdocs.redaction.examples.java.basic_usage.remove_page_redactions.RemovePageRange.run();
+
+        //Remove the last page.
+        //com.groupdocs.redaction.examples.java.basic_usage.remove_page_redactions.RemoveLastPage.run();
+        
         // Get supported file formats.
         //com.groupdocs.redaction.examples.java.basic_usage.GetSupportedFileFormats.run();
 

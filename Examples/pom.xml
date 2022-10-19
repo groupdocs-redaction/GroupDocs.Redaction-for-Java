@@ -86,7 +86,7 @@
 	 	<dependency>
 	  		<groupId>com.groupdocs</groupId>
 	  		<artifactId>groupdocs-redaction</artifactId>
-	  		<version>21.6</version>
+	  		<version>22.10</version>
 	 	</dependency>
 
 	</dependencies>
