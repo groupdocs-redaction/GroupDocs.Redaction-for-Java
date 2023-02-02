@@ -55,6 +55,7 @@ public class Constants
     // Images
     public static String SAMPLE_JPG = getSampleFilePath("Image/sample.jpg");
     public static String SAMPLE_EXIF_JPG = getSampleFilePath("Image/exif.jpg");
+    public static String ANIMATED_GIF = getSampleFilePath("Image/sample.gif");
 
     // Text files
     public static String SAMPLE_DUMP = getSampleFilePath("Doc/sample.dump");

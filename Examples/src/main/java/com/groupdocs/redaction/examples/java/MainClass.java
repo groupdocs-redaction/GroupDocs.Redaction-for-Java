@@ -81,6 +81,9 @@ public class MainClass
         //Remove the last page.
         //com.groupdocs.redaction.examples.java.basic_usage.remove_page_redactions.RemoveLastPage.run();
         
+        //Remove frame from image.
+        //com.groupdocs.redaction.examples.java.basic_usage.remove_page_redactions.RemoveFrameFromImage.run();
+
         // Get supported file formats.
         //com.groupdocs.redaction.examples.java.basic_usage.GetSupportedFileFormats.run();
 
@@ -123,6 +126,21 @@ public class MainClass
 
         //Save only specific pages of thge Document as PDF 
         //com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.SelectSpecificPagesForRasterizedPDF.run();
+
+        // Use advanced rasterization options
+        //com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.UseAdvancedRasterizationOptions.run();
+
+        // Use border rasterization option
+        //com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.UseBorderRasterizationOption.run();
+                    
+        // Use grayscale rasterization option
+        //com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.UseGrayscaleRasterizationOption.run();
+
+        // Use noise rasterizationo ption
+        //com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.UseNoiseRasterizationOption.run();
+
+        // Use tilt rasterization option
+        //com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.UseTiltRasterizationOption.run();
 
         // Using OCR
         // Use Aspose.OCR for Cloud SDK
