@@ -108,6 +108,9 @@ public class MainClass
         //Redact a Password-Protected Document
         //com.groupdocs.redaction.examples.java.advanced_usage.loading_documents.LoadPasswordProtectedFile.run();
 
+        //Pre-rasterize document
+        //com.groupdocs.redaction.examples.java.advanced_usage.loading_documents.PreRasterize.run();
+        
         //  Saving Documents
         //Save the Redacted Document In Its Original Format With Timestamp
         //com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.SaveInOriginalFormat.run();
