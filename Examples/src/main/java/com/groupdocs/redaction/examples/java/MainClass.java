@@ -152,6 +152,10 @@ public class MainClass
         // Use Microsoft Azure Cognitive Services Computer Vision
         //com.groupdocs.redaction.examples.java.advanced_usage.using_ocr.UseMicrosoftAzureComputerVision.run();
 
+        // Using redaction filters
+        // Use PDF redaction filters
+        //com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters.UsePdfRedactionFilters.run();
+
         //Adding custom file extensions
         //com.groupdocs.redaction.examples.java.advanced_usage.ExtendSupportedExtensionsList.run();
 
