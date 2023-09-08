@@ -45,7 +45,9 @@ public class Constants
     // PDF
     public static String SAMPLE_PDF_4OCR = getSampleFilePath("Pdf/OCR sample.pdf");
     public static String MULTIPAGE_PDF = getSampleFilePath("Pdf/Multipage.pdf");
-    
+    public static String LOREMIPSUM_PDF = getSampleFilePath("Pdf/LoremIpsum.pdf");
+    public static String ARABIC_PDF = getSampleFilePath("Pdf/Arabic.pdf");
+        
     // Presentations
 
     // Spreadsheets

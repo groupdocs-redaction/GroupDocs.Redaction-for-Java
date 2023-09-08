@@ -34,8 +34,14 @@ public class MainClass
         //Replace text with colored rectangle 
         //com.groupdocs.redaction.examples.java.basic_usage.text_redactions.UseColoredRectangle.run();
 
+        //Replace arabic (or any right-to-left) text  
+        //com.groupdocs.redaction.examples.java.basic_usage.text_redactions.UseExactPhraseRightToLeft.run();
+        
         //Peform a regular expression redaction
         //com.groupdocs.redaction.examples.java.basic_usage.text_redactions.UseRegularExpression.run();
+        
+        //Redact whole paragraph from a document
+        //com.groupdocs.redaction.examples.java.basic_usage.text_redactions.UseRegexForParagraph.run();
 
         //  Metadata Redactions
         //Clean document metadata
@@ -155,6 +161,9 @@ public class MainClass
         // Using redaction filters
         // Use PDF redaction filters
         //com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters.UsePdfRedactionFilters.run();
+        
+        // Use PageAreaRedaction
+        //com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters.UsePageAreaRedaction.run();
 
         //Adding custom file extensions
         //com.groupdocs.redaction.examples.java.advanced_usage.ExtendSupportedExtensionsList.run();
