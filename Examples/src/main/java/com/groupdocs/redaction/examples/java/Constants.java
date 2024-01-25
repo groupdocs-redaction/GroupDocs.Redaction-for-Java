@@ -9,7 +9,7 @@ public class Constants
      * License file path
      * </p>
      */
-    public static final String LicensePath = "c:\\Worx\\Aspose\\Data\\License\\Conholdate.Total.Product.Family.lic";
+    public static final String LicensePath = "C:\\GroupDocs.Redaction.Java.lic";
 
     /**
      * <p>
@@ -49,7 +49,7 @@ public class Constants
     public static String ARABIC_PDF = getSampleFilePath("Pdf/Arabic.pdf");
         
     // Presentations
-
+    public static String LOREMIPSUM_PPT = getSampleFilePath("Ppt/LoremIpsum.pptx");
     // Spreadsheets
     public static String ANNOTATED_XLSX = getSampleFilePath("Xls/sample1.xlsx");
     public static String SAMPLE_XLSX = getSampleFilePath("Xls/sample.xlsx");

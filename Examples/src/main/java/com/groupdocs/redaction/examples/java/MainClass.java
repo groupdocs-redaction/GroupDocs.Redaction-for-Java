@@ -13,7 +13,7 @@ public class MainClass
         com.groupdocs.redaction.examples.java.quick_start.SetLicenseFromFile.run();
         //QuickStart.SetLicenseFromStream.run();
         //QuickStart.SetMeteredLicense.run();
-        com.groupdocs.redaction.examples.java.quick_start.HelloWorld.run();
+        //com.groupdocs.redaction.examples.java.quick_start.HelloWorld.run();
 
         //  Basic Usage
 
@@ -163,8 +163,8 @@ public class MainClass
         //com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters.UsePdfRedactionFilters.run();
         
         // Use PageAreaRedaction
-        //com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters.UsePageAreaRedaction.run();
-
+        //com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters.UsePageAreaRedaction.runPdf();
+        //com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters.UsePageAreaRedaction.runPppt();
         //Adding custom file extensions
         //com.groupdocs.redaction.examples.java.advanced_usage.ExtendSupportedExtensionsList.run();
 

@@ -4,5 +4,5 @@
 ~
 .m2
 /Examples/target/
-
+/Examples/.idea
 deploy_key

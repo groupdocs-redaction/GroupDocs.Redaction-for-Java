@@ -81,16 +81,20 @@
             		<groupId>com.aspose</groupId>
             		<artifactId>aspose-ocr-cloud</artifactId>
             		<version>21.6.0</version>
-
          	</dependency>
 	 	<dependency>
 	  		<groupId>com.groupdocs</groupId>
 	  		<artifactId>groupdocs-redaction</artifactId>
-	  		<version>23.9</version>
+	  		<version>24.1</version>
 	 	</dependency>
 
 	</dependencies>
     <repositories>
+        <repository>
+            <id>maven.aspose.com</id>
+            <name>artifact.aspose.cloud-releases</name>
+            <url>https://releases.aspose.cloud/java/repo/</url>
+        </repository>
     </repositories>
     <build>
         <resources>

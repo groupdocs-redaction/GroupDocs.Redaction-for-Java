@@ -21,7 +21,7 @@ import com.groupdocs.redaction.redactions.ReplacementOptions;
  * To access the service you need a valid subscription in Aspose.OCR for Cloud. You can always request an evaluation.
  * </p> 
  */
-public class UseAsposeOCRForCloud 
+public class UseAsposeOCRForCloud
 {
     public static void run() throws java.lang.Exception
     {

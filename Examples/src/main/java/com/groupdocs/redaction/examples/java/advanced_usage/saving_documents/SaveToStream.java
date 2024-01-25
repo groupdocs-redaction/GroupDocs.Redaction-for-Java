@@ -7,6 +7,7 @@ import com.groupdocs.redaction.options.RasterizationOptions;
 import com.groupdocs.redaction.redactions.ExactPhraseRedaction;
 import com.groupdocs.redaction.redactions.ReplacementOptions;
 
+import java.io.File;
 import java.io.FileOutputStream;
 
 /**
@@ -25,8 +26,12 @@ public class SaveToStream
             RedactorChangeLog result = redactor.apply(new ExactPhraseRedaction("John Doe", new ReplacementOptions(java.awt.Color.RED)));
             if (result.getStatus() != RedactionStatus.Failed)
             {
+                File f = new File("C:\\sample_output_file.pdf");
+                if(!f.exists()){
+                    f.createNewFile();
+                }
                 // Save the document to a custom location and convert its pages to images
-                final FileOutputStream fileStream = new FileOutputStream("C:\\\\Temp\\\\sample_output_file.pdf");
+                final FileOutputStream fileStream = new FileOutputStream(f);
                 try 
                 {
                     RasterizationOptions options = new  RasterizationOptions();

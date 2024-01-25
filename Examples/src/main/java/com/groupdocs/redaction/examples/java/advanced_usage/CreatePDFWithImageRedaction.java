@@ -45,7 +45,7 @@ public class CreatePDFWithImageRedaction
                     new RegionReplacementOptions(java.awt.Color.BLUE, new java.awt.Dimension(1050, 720))));
                 if (result.getStatus() != RedactionStatus.Failed)
                 {
-                    final FileOutputStream fileStream = new FileOutputStream("C:\\Temp\\sample_raster.pdf");
+                    final FileOutputStream fileStream = new FileOutputStream("C:\\sample_raster.pdf");
                     try 
                     {
                         RasterizationOptions options = new  RasterizationOptions();
