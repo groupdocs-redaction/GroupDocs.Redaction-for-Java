@@ -7,6 +7,8 @@ import com.groupdocs.redaction.licensing.Metered;
 import com.groupdocs.redaction.redactions.ExactPhraseRedaction;
 import com.groupdocs.redaction.redactions.ReplacementOptions;
 
+import java.math.BigDecimal;
+
 /**
  * <p>
  * This example demonstrates how to set Metered license.
@@ -32,10 +34,10 @@ public class SetMeteredLicense
             RedactorChangeLog result = redactor.apply(new ExactPhraseRedaction("John Doe", new ReplacementOptions(java.awt.Color.RED)));
 
             // and get consumption quantity
-            double consumptionQuantitiy = Metered.getConsumptionQuantity();
+            BigDecimal consumptionQuantitiy = Metered.getConsumptionQuantity();
 
             // get consumption credit
-            double consumptionCredit = Metered.getConsumptionCredit();
+            BigDecimal consumptionCredit = Metered.getConsumptionCredit();
         }
         finally { redactor.close(); }
     }

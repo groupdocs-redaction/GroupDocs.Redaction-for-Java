@@ -134,22 +134,22 @@ public class MainClass
         //com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.SaveWithDefaultOptions.run();
 
         //Save only specific pages of thge Document as PDF 
-        com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.SelectSpecificPagesForRasterizedPDF.run();
+        //com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.SelectSpecificPagesForRasterizedPDF.run();
 
         // Use advanced rasterization options
-        com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.UseAdvancedRasterizationOptions.run();
+        //com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.UseAdvancedRasterizationOptions.run();
 
         // Use border rasterization option
-        com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.UseBorderRasterizationOption.run();
+        //com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.UseBorderRasterizationOption.run();
                     
         // Use grayscale rasterization option
-        com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.UseGrayscaleRasterizationOption.run();
+        //com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.UseGrayscaleRasterizationOption.run();
 
         // Use noise rasterizationo ption
-        com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.UseNoiseRasterizationOption.run();
+        //com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.UseNoiseRasterizationOption.run();
 
         // Use tilt rasterization option
-        com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.UseTiltRasterizationOption.run();
+        //com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.UseTiltRasterizationOption.run();
 
         // Using OCR
         // Use Aspose.OCR for Cloud SDK
@@ -160,28 +160,28 @@ public class MainClass
 
         // Using redaction filters
         // Use PDF redaction filters
-        com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters.UsePdfRedactionFilters.run();
+        //com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters.UsePdfRedactionFilters.run();
         
         // Use PageAreaRedaction
-        com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters.UsePageAreaRedaction.runPdf();
-        com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters.UsePageAreaRedaction.runPppt();
+        //com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters.UsePageAreaRedaction.runPdf();
+        //com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters.UsePageAreaRedaction.runPppt();
         //Adding custom file extensions
-        com.groupdocs.redaction.examples.java.advanced_usage.ExtendSupportedExtensionsList.run();
+        //com.groupdocs.redaction.examples.java.advanced_usage.ExtendSupportedExtensionsList.run();
 
         //Work with redaction callback 
-        com.groupdocs.redaction.examples.java.advanced_usage.UseRedactionCallback.run();
+        //com.groupdocs.redaction.examples.java.advanced_usage.UseRedactionCallback.run();
 
         //Create a custom file foramt 
-        com.groupdocs.redaction.examples.java.advanced_usage.CreateCustomFormatHandler.run();
+        //com.groupdocs.redaction.examples.java.advanced_usage.CreateCustomFormatHandler.run();
 
         //Save a set of redactions as an XML policy.
-        com.groupdocs.redaction.examples.java.advanced_usage.CreateRedactionPolicy.run();
+        //com.groupdocs.redaction.examples.java.advanced_usage.CreateRedactionPolicy.run();
         
         //Configure redactions in XML and apply them to any document as a single redaction profile.
-        com.groupdocs.redaction.examples.java.advanced_usage.UseRedactionPolicy.run();
+        //com.groupdocs.redaction.examples.java.advanced_usage.UseRedactionPolicy.run();
 
         //Create a PDF document with page image redactions 
-        com.groupdocs.redaction.examples.java.advanced_usage.CreatePDFWithImageRedaction.run();
+        //com.groupdocs.redaction.examples.java.advanced_usage.CreatePDFWithImageRedaction.run();
         
         System.out.println("Operation completed...");
     }

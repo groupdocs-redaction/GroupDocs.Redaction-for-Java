@@ -36,7 +36,7 @@ public class UseRedactionPolicy
                 File resultFolder = new File(result.getStatus() != RedactionStatus.Failed ?Constants.POLICY_OUTBOUND_DONE : Constants.POLICY_OUTBOUND_FAILED);
                     
                 // Save the ouput files after applying redactions
-                final FileOutputStream fileStream = new FileOutputStream(resultFolder.getPath() + fileEntry.getName());
+                final FileOutputStream fileStream = new FileOutputStream(resultFolder.getPath() + "\\"+fileEntry.getName());
                 try 
                 {
                     RasterizationOptions options = new  RasterizationOptions();
