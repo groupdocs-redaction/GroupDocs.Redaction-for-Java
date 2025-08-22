@@ -1,24 +1,32 @@
-# Redact Private Information via Java API
+# GroupDocs.Redaction-for-Java
 
-GroupDocs.Redaction provides a single format-independent interface to [Remove Sensitive & Classified Data from Documents](https://products.groupdocs.com/redaction/java), including the document’s metadata and annotations. The Redaction Library also provides the ability to optionally save redacted documents in PDF format, transform all pages into raster images or re-save redacted document in its original format for further editing in its native application.
+GroupDocs.Redaction offers a single, format-independent API to [remove sensitive and confidential information from documents](https://products.groupdocs.com/redaction/java), including text, images, metadata, and annotations. The library lets you save redacted documents in PDF, convert all pages into raster images for stronger protection, or keep the original format so the file can still be edited in its native application.
 
 <p align="center">
-  <a title="Download complete GroupDocs.Redaction for Java source code" href="https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java/archive/master.zip"> 
-    <img src="https://camo.githubusercontent.com/11839cd752a2d367f3149c7bee1742b68e4a4d37/68747470733a2f2f7261772e6769746875622e636f6d2f4173706f73654578616d706c65732f6a6176612d6578616d706c65732d64617368626f6172642f6d61737465722f696d616765732f646f776e6c6f61645a69702d427574746f6e2d4c617267652e706e67" data-canonical-src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" style="max-width:100%;">
+  <a title="Download complete GroupDocs.Redaction for Java source code" href="https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java/archive/master.zip">
+	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
 
 Directory | Description
 --------- | -----------
-[Examples](https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java/tree/master/Examples)  | Java examples and sample documents for you to get started quickly. 
+[Examples](https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java/tree/master/Examples)  | Contains Java examples and sample files that show how to work with the API features. 
 
-## Document Redaction Library
+## Document Redaction Features
 
-- [Rasterize documents](https://docs.groupdocs.com/redaction/java/save-in-rasterized-pdf/) by adding images of redacted pages.
-- Save the document in its original format after applying redaction.
-- Delete document metadata to remove all sensitive information.
-- Use regular expressions to match & remove document annotations.
-- Redact images by adding colored box over a given area.
+- Remove confidential information from 30+ file formats.
+- Delete metadata, comments, and annotations.
+- [Save a rasterized PDF copy of a redacted file for stronger protection](https://docs.groupdocs.com/redaction/java/save-in-rasterized-pdf/).
+- Keep the original format of a document after redaction.
+- Apply redaction to a specific worksheet or column in spreadsheets.
+- Adjust PDF compliance level from PDF/A-1b to PDF/A-1a when saving.
+
+## Supported Redaction Types
+
+- Text: Replace or hide words and phrases with a colored overlay.
+- Image: Cover chosen areas of images with a solid color.
+- Metadata: Remove or replace metadata values.
+- Annotation: Delete or redact annotations.  
 
 ## Get Started with GroupDocs.Redaction for Java
 
