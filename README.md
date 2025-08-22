@@ -16,7 +16,7 @@ Directory | Description
 
 - Remove confidential information from 30+ file formats.
 - Delete metadata, comments, and annotations.
-- [Save a rasterized PDF copy of a redacted file for stronger protection](https://docs.groupdocs.com/redaction/java/save-in-rasterized-pdf/).
+- Save a rasterized PDF copy of a redacted file for stronger protection.
 - Keep the original format of a document after redaction.
 - Apply redaction to a specific worksheet or column in spreadsheets.
 - Adjust PDF compliance level from PDF/A-1b to PDF/A-1a when saving.
@@ -32,7 +32,7 @@ Directory | Description
 
 GroupDocs.Redaction for Java requires J2SE 7.0 (1.7), J2SE 8.0 (1.8) or above. Please install Java first if you do not have it already. 
 
-GroupDocs hosts all Java APIs on [GroupDocs Artifact Repository](https://artifact.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-redaction), so simply [configure](https://docs.groupdocs.com/redaction/java/installation/) your Maven project to fetch the dependencies automatically.
+GroupDocs hosts all Redaction-for-Java versions APIs on [GroupDocs Artifact Repository](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-redaction/), so simply [configure](https://docs.groupdocs.com/redaction/java/installation/) your Maven project to fetch the dependencies automatically.
 
 ## Remove Annotations from an Excel File & Save As PDF
 
