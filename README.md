@@ -1,6 +1,6 @@
 # GroupDocs.Redaction-for-Java
 
-GroupDocs.Redaction offers a single, format-independent API to [remove sensitive and confidential information from documents](https://products.groupdocs.com/redaction/java), including text, images, metadata, and annotations. The library lets you save redacted documents in PDF, convert all pages into raster images for stronger protection, or keep the original format so the file can still be edited in its native application.
+[GroupDocs.Redaction for Java](https://products.groupdocs.com/redaction/java)offers a single, format-independent API to remove sensitive and confidential information from documents, including text, images, metadata, and annotations. The library lets you save redacted documents in PDF, convert all pages into raster images for stronger protection, or keep the original format so the file can still be edited in its native application.
 
 <p align="center">
   <a title="Download complete GroupDocs.Redaction for Java source code" href="https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java/archive/master.zip">
