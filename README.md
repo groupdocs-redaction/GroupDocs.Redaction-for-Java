@@ -14,7 +14,7 @@ Directory | Description
 
 ## Document Redaction Features
 
-- Remove confidential information from 30+ file formats.
+- Remove confidential information from [30+ file formats](https://docs.groupdocs.com/redaction/java/supported-document-formats).
 - Delete metadata, comments, and annotations.
 - Save a rasterized PDF copy of a redacted file for stronger protection.
 - Keep the original format of a document after redaction.
@@ -26,7 +26,13 @@ Directory | Description
 - Text: Replace or hide words and phrases with a colored overlay.
 - Image: Cover chosen areas of images with a solid color.
 - Metadata: Remove or replace metadata values.
-- Annotation: Delete or redact annotations.  
+- Annotation: Delete or redact annotations.
+
+## Develop & Deploy Anywhere
+
+**Operation Systems:** Windows, Linux, Mac OS\
+**Supported IDE:** IntelliJ IDEA, Eclipse, NetBeans\
+**Environment:** Java 8 or higher, Kotlin
 
 ## Get Started with GroupDocs.Redaction for Java
 
