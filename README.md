@@ -1,16 +1,18 @@
+[Product Page](https://products.groupdocs.com/redaction/java) | [Docs](https://docs.groupdocs.com/redaction/java/) | [Free Web Demo](https://products.groupdocs.app/redaction/family) | [API Reference](https://apireference.groupdocs.com/java/redaction) | [Blog](https://blog.groupdocs.com/category/redaction/) | [Search](https://search.groupdocs.com/) | [Free Support](https://forum.groupdocs.com/c/redaction) | [Temporary License](https://purchase.groupdocs.com/temporary-license)
+
 # GroupDocs.Redaction-for-Java
+
+[![banner](https://raw.githubusercontent.com/groupdocs/groupdocs.github.io/master/img/banners/groupdocs-redaction-common-banner.png)](https://releases.groupdocs.com/conversion/python-net/)
 
 [GroupDocs.Redaction for Java](https://products.groupdocs.com/redaction/java) offers a single, format-independent API to remove sensitive and confidential information from documents, including text, images, metadata, and annotations. The library lets you save redacted documents in PDF, convert all pages into raster images for stronger protection, or keep the original format so the file can still be edited in its native application.
 
+<br>
 <p align="center">
   <a title="Download complete GroupDocs.Redaction for Java source code" href="https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java/archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
 
-Directory | Description
---------- | -----------
-[Examples](https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java/tree/master/Examples)  | Contains Java examples and sample files that show how to work with the API features. 
 
 ## Document Redaction Features
 
@@ -70,4 +72,4 @@ try
 finally { redactor.close(); }
 ```
 
-[Home](https://products.groupdocs.com/) | [Product Page](https://products.groupdocs.com/redaction/java) | [Documentation](https://docs.groupdocs.com/redaction/java/) | [Demos](https://products.groupdocs.app/redaction/family) | [API Reference](https://apireference.groupdocs.com/java/redaction) | [Examples](https://github.com/groupdocs-redaction/GroupDocs.redaction-for-Java/tree/master/Examples) | [Blog](https://blog.groupdocs.com/category/redaction/) | [Search](https://search.groupdocs.com/) | [Free Support](https://forum.groupdocs.com/c/redaction) | [Temporary License](https://purchase.groupdocs.com/temporary-license)
+[Product Page](https://products.groupdocs.com/redaction/java) | [Docs](https://docs.groupdocs.com/redaction/java/) | [Free Web Demo](https://products.groupdocs.app/redaction/family) | [API Reference](https://apireference.groupdocs.com/java/redaction) | [Blog](https://blog.groupdocs.com/category/redaction/) | [Search](https://search.groupdocs.com/) | [Free Support](https://forum.groupdocs.com/c/redaction) | [Temporary License](https://purchase.groupdocs.com/temporary-license)
