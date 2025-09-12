@@ -1,6 +1,6 @@
 [Product Page](https://products.groupdocs.com/redaction/java) | [Docs](https://docs.groupdocs.com/redaction/java/) | [Free Web Demo](https://products.groupdocs.app/redaction/family) | [API Reference](https://apireference.groupdocs.com/java/redaction) | [Blog](https://blog.groupdocs.com/category/redaction/) | [Search](https://search.groupdocs.com/) | [Free Support](https://forum.groupdocs.com/c/redaction) | [Temporary License](https://purchase.groupdocs.com/temporary-license)
 
-# GroupDocs.Redaction-for-Java
+# GroupDocs.Redaction for Java
 
 [![banner](https://raw.githubusercontent.com/groupdocs/groupdocs.github.io/master/img/banners/groupdocs-redaction-common-banner.png)](https://releases.groupdocs.com/conversion/python-net/)
 
