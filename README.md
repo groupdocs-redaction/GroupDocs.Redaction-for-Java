@@ -40,7 +40,7 @@
 
 GroupDocs.Redaction for Java requires J2SE 7.0 (1.7), J2SE 8.0 (1.8) or above. Please install Java first if you do not have it already. 
 
-GroupDocs hosts all Redaction-for-Java versions APIs on [GroupDocs Artifact Repository](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-redaction/), so simply [configure](https://docs.groupdocs.com/redaction/java/installation/) your Maven project to fetch the dependencies automatically.
+GroupDocs hosts all Redaction for Java versions APIs on [GroupDocs Artifact Repository](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-redaction/), so simply [configure](https://docs.groupdocs.com/redaction/java/installation/) your Maven project to fetch the dependencies automatically. Direct download is available [here](https://releases.groupdocs.com/redaction/java/#direct-download/).
 
 ## Remove Annotations from an Excel File & Save As PDF
 
