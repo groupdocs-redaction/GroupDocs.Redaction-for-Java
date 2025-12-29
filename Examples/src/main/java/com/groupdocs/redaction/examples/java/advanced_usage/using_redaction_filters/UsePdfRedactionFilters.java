@@ -1,6 +1,6 @@
 package com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters;
 
-import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 
 import com.groupdocs.redaction.Redactor;
 import com.groupdocs.redaction.IDocumentInfo;
@@ -22,7 +22,7 @@ public class UsePdfRedactionFilters
 {
     public static void run() throws java.lang.Exception
     {
-        final Redactor redactor = new Redactor(Constants.MULTIPAGE_PDF);
+        final Redactor redactor = new Redactor(SampleFiles.MULTIPAGE_PDF);
         try 
         {
             // Get the actual size information for the last page:
@@ -37,7 +37,13 @@ public class UsePdfRedactionFilters
             RedactorChangeLog result = redactor.apply(new ExactPhraseRedaction("bibliography", false, options));
             if (result.getStatus() != RedactionStatus.Failed)
             {
-                redactor.save();
+                // Save to output folder
+                String outputPath = SampleFiles.getOutputFilePath("UsePdfRedactionFilters", SampleFiles.MULTIPAGE_PDF);
+                java.io.File outputFile = new java.io.File(outputPath);
+                outputFile.getParentFile().mkdirs();
+                try (java.io.FileOutputStream stream = new java.io.FileOutputStream(outputFile)) {
+                    redactor.save(stream);
+                }
             }                            
         }
         finally { redactor.close(); }

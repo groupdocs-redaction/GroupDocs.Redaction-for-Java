@@ -5,13 +5,16 @@ import com.groupdocs.redaction.RedactionStatus;
 import com.groupdocs.redaction.Redactor;
 import com.groupdocs.redaction.RedactorChangeLog;
 import com.groupdocs.redaction.options.LoadOptions;
+import com.groupdocs.redaction.options.RasterizationOptions;
 import com.groupdocs.redaction.options.RedactorSettings;
 
 import com.groupdocs.redaction.examples.java.helper_classes.AsposeCloudOcrConnector;
-import com.groupdocs.redaction.examples.java.Constants;
-import com.groupdocs.redaction.options.SaveOptions;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 import com.groupdocs.redaction.redactions.RegexRedaction;
 import com.groupdocs.redaction.redactions.ReplacementOptions;
+
+import java.io.File;
+import java.io.FileOutputStream;
 
 /**
  * <p>
@@ -26,7 +29,7 @@ public class UseAsposeOCRForCloud
     public static void run() throws java.lang.Exception
     {
         RedactorSettings settings = new RedactorSettings(new AsposeCloudOcrConnector());
-        try (Redactor redactor = new Redactor(Constants.SAMPLE_PDF_4OCR, new LoadOptions(), settings))
+        try (Redactor redactor = new Redactor(SampleFiles.SAMPLE_PDF_4OCR, new LoadOptions(), settings))
         {
             ReplacementOptions marker = new ReplacementOptions(java.awt.Color.BLACK);
             RedactorChangeLog result = redactor.apply(new Redaction[] {
@@ -36,7 +39,16 @@ public class UseAsposeOCRForCloud
             });
             if (result.getStatus() != RedactionStatus.Failed)
             {
-                redactor.save(new SaveOptions(false, "AsposeOCR"));
+                // Configure rasterization options - don't rasterize, save in original format
+                RasterizationOptions rasterOptions = new RasterizationOptions();
+                rasterOptions.setEnabled(false);
+                // Save to output folder
+                String outputPath = SampleFiles.getOutputFilePath("UseAsposeOCRForCloud", SampleFiles.SAMPLE_PDF_4OCR);
+                File outputFile = new File(outputPath);
+                outputFile.getParentFile().mkdirs();
+                try (FileOutputStream stream = new FileOutputStream(outputFile)) {
+                    redactor.save(stream, rasterOptions);
+                }
             }
         }
     }

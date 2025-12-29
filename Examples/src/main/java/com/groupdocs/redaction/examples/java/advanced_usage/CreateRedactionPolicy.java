@@ -1,7 +1,7 @@
 package com.groupdocs.redaction.examples.java.advanced_usage;
 
 import com.groupdocs.redaction.*;
-import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 import com.groupdocs.redaction.redactions.*;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -26,7 +26,7 @@ public class CreateRedactionPolicy {
             new EraseMetadataRedaction(MetadataFilters.All)
         });
         //Save RedactionPolicy
-        policy.save(Constants.POLICY_SAVE);
+        policy.save(SampleFiles.POLICY_SAVE);
 
         //ExEnd:ConfigurableRedaction_20.11
     }    

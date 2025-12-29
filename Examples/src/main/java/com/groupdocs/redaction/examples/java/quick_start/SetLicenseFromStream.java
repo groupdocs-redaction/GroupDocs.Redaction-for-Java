@@ -31,8 +31,8 @@ public class SetLicenseFromStream
         {
             System.out.println("\nWe do not ship any license with this example. "
                         + "\nVisit the GroupDocs site to obtain either a temporary or permanent license. " 
-                        + "\nLearn more about licensing at https://purchase.groupdocs.com/faqs/licensing. " 
-                        + "\nLearn how to request a temporary license at https://purchase.groupdocs.com/temporary-license.");
+                        + "\nGet a temporary license at: https://purchase.groupdocs.com/temp-license/100510"
+                        + "\nLearn more about licensing at: https://purchase.groupdocs.com/faqs/licensing");
         }
     }
 }

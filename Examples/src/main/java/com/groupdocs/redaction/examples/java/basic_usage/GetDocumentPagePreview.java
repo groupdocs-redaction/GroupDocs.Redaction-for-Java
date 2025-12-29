@@ -1,7 +1,7 @@
 package com.groupdocs.redaction.examples.java.basic_usage;
 
 import com.groupdocs.redaction.Redactor;
-import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 import com.groupdocs.redaction.options.ICreatePageStream;
 import com.groupdocs.redaction.options.PreviewFormats;
 import com.groupdocs.redaction.options.PreviewOptions;
@@ -18,9 +18,9 @@ public class GetDocumentPagePreview
         // Take preview of the first page
         int testPageNumber = 1;
         // Preview file name
-        final String previewFileName = String.format("%s_page%d.png", Constants.SAMPLE_DOCX, testPageNumber);
+        final String previewFileName = String.format("%s_page%d.png", SampleFiles.SAMPLE_DOCX, testPageNumber);
         // Load the document to generate preview
-        final Redactor redactor = new Redactor(Constants.SAMPLE_DOCX);
+        final Redactor redactor = new Redactor(SampleFiles.SAMPLE_DOCX);
         try 
         {
             PreviewOptions options = new PreviewOptions(new ICreatePageStream() { 

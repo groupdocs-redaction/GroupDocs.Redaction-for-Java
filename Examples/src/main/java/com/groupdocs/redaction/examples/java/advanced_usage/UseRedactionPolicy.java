@@ -4,7 +4,7 @@ package com.groupdocs.redaction.examples.java.advanced_usage;
 import com.groupdocs.redaction.*;
 import com.groupdocs.redaction.options.RasterizationOptions;
 
-import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 import java.io.File;
 import java.io.FileOutputStream;
 
@@ -22,9 +22,9 @@ public class UseRedactionPolicy
         //ExStart:ConfigurableRedaction_19.3
 
         //Initialize RedactionPolicy
-        RedactionPolicy policy = RedactionPolicy.load(Constants.POLICY_FILE);
+        RedactionPolicy policy = RedactionPolicy.load(SampleFiles.POLICY_FILE);
 
-        for (final File fileEntry : new File(Constants.POLICY_INBOUND).listFiles())
+        for (final File fileEntry : new File(SampleFiles.POLICY_INBOUND).listFiles())
         {
             final Redactor redactor  = new Redactor( fileEntry.getPath());
             try 
@@ -33,7 +33,8 @@ public class UseRedactionPolicy
                 RedactorChangeLog result = redactor.apply(policy);
                     
                 // Set the output directory path, it is supposed that all folders exist
-                File resultFolder = new File(result.getStatus() != RedactionStatus.Failed ?Constants.POLICY_OUTBOUND_DONE : Constants.POLICY_OUTBOUND_FAILED);
+                File resultFolder = new File(result.getStatus() != RedactionStatus.Failed 
+                    ? SampleFiles.POLICY_OUTBOUND_DONE : SampleFiles.POLICY_OUTBOUND_FAILED);
                     
                 // Save the ouput files after applying redactions
                 final FileOutputStream fileStream = new FileOutputStream(resultFolder.getPath() + "\\"+fileEntry.getName());

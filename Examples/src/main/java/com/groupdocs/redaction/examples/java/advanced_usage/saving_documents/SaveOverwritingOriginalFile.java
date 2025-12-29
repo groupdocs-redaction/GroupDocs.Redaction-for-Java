@@ -1,7 +1,7 @@
 package com.groupdocs.redaction.examples.java.advanced_usage.saving_documents;
 
 import com.groupdocs.redaction.RedactionStatus;
-import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 
 import com.groupdocs.redaction.Redactor;
 import com.groupdocs.redaction.RedactorChangeLog;
@@ -23,9 +23,9 @@ public class SaveOverwritingOriginalFile
     public static void run() throws java.lang.Exception
     {
         // Make a copy of sample file
-        Files.copy(new File(Constants.SAMPLE_DOCX).toPath(), new File(Constants.OVERWRITTEN_SAMPLE_DOCX).toPath(), StandardCopyOption.REPLACE_EXISTING);
+        Files.copy(new File(SampleFiles.SAMPLE_DOCX).toPath(), new File(SampleFiles.OVERWRITTEN_SAMPLE_DOCX).toPath(), StandardCopyOption.REPLACE_EXISTING);
         // Apply redaction
-        final Redactor redactor = new Redactor(Constants.OVERWRITTEN_SAMPLE_DOCX);
+        final Redactor redactor = new Redactor(SampleFiles.OVERWRITTEN_SAMPLE_DOCX);
         try 
         {
             RedactorChangeLog result = redactor.apply(new ExactPhraseRedaction("John Doe", new ReplacementOptions(java.awt.Color.RED)));

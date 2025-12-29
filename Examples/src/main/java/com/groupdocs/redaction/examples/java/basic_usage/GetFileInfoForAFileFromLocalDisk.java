@@ -1,7 +1,7 @@
 package com.groupdocs.redaction.examples.java.basic_usage;
 
 import com.groupdocs.redaction.*;
-import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 
 /**
  * <p>
@@ -12,7 +12,7 @@ public class GetFileInfoForAFileFromLocalDisk
 {
     public static void run() throws java.lang.Exception
     {
-        final Redactor redactor = new Redactor(Constants.SAMPLE_DOCX);
+        final Redactor redactor = new Redactor(SampleFiles.SAMPLE_DOCX);
         try 
         {
             IDocumentInfo info = redactor.getDocumentInfo();

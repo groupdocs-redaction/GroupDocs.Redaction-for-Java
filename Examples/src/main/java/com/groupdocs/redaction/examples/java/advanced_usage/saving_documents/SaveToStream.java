@@ -1,6 +1,6 @@
 package com.groupdocs.redaction.examples.java.advanced_usage.saving_documents;
 
-import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 
 import com.groupdocs.redaction.*;
 import com.groupdocs.redaction.options.RasterizationOptions;
@@ -19,26 +19,24 @@ public class SaveToStream
 {
     public static void run() throws java.lang.Exception
     {
-        final Redactor redactor = new Redactor(Constants.SAMPLE_DOCX);
+        final Redactor redactor = new Redactor(SampleFiles.SAMPLE_DOCX);
         try 
         {
             // Here we can use document instance to perform redactions
             RedactorChangeLog result = redactor.apply(new ExactPhraseRedaction("John Doe", new ReplacementOptions(java.awt.Color.RED)));
             if (result.getStatus() != RedactionStatus.Failed)
             {
-                File f = new File("C:\\sample_output_file.pdf");
-                if(!f.exists()){
-                    f.createNewFile();
-                }
-                // Save the document to a custom location and convert its pages to images
-                final FileOutputStream fileStream = new FileOutputStream(f);
-                try 
-                {
-                    RasterizationOptions options = new  RasterizationOptions();
-                    options.setEnabled(true);
+                // Configure rasterization options - enable rasterization to convert pages to images
+                RasterizationOptions options = new RasterizationOptions();
+                options.setEnabled(true);
+                // Save to output folder as rasterized PDF
+                String outputPath = SampleFiles.getOutputFilePath("SaveToStream", SampleFiles.SAMPLE_DOCX);
+                outputPath = outputPath.replaceAll("\\.[^.]+$", ".pdf");
+                File outputFile = new File(outputPath);
+                outputFile.getParentFile().mkdirs();
+                try (FileOutputStream fileStream = new FileOutputStream(outputFile)) {
                     redactor.save(fileStream, options);
                 }
-                finally { fileStream.close(); }
             }
         }
         finally { redactor.close(); }

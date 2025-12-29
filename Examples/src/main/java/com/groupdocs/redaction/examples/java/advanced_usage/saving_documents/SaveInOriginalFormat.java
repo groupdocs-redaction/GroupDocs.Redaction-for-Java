@@ -1,14 +1,14 @@
 package com.groupdocs.redaction.examples.java.advanced_usage.saving_documents;
 
-import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 
 import com.groupdocs.redaction.Redactor;
-import com.groupdocs.redaction.options.SaveOptions;
+import com.groupdocs.redaction.options.RasterizationOptions;
 import com.groupdocs.redaction.redactions.ExactPhraseRedaction;
 import com.groupdocs.redaction.redactions.ReplacementOptions;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.io.File;
+import java.io.FileOutputStream;
 
 /**
  * <p>
@@ -19,17 +19,21 @@ public class SaveInOriginalFormat
 {
     public static void run() throws java.lang.Exception
     {
-        final Redactor redactor = new Redactor(Constants.SAMPLE_DOCX);
+        final Redactor redactor = new Redactor(SampleFiles.SAMPLE_DOCX);
         try 
         {
             // Here we can use document instance to perform redactions
             redactor.apply(new ExactPhraseRedaction("John Doe", new ReplacementOptions("[personal]")));
-            SaveOptions saveOptions = new SaveOptions();
-            saveOptions.setAddSuffix(true);
-            saveOptions.setRasterizeToPDF(false);
-            saveOptions.setRedactedFileSuffix(new SimpleDateFormat("dd-MM-yyyy").format(new Date()));
-            // Saving in original format with date as DateTime.getNow().toShortDateString()a suffix
-            redactor.save(saveOptions);
+            // Configure rasterization options for saving to stream in original format
+            RasterizationOptions rasterOptions = new RasterizationOptions();
+            rasterOptions.setEnabled(false); // Don't rasterize, save in original format
+            // Save to output folder in original format
+            String outputPath = SampleFiles.getOutputFilePath("SaveInOriginalFormat", SampleFiles.SAMPLE_DOCX);
+            File outputFile = new File(outputPath);
+            outputFile.getParentFile().mkdirs();
+            try (FileOutputStream stream = new FileOutputStream(outputFile)) {
+                redactor.save(stream, rasterOptions);
+            }
         }
         finally { redactor.close(); }
     }

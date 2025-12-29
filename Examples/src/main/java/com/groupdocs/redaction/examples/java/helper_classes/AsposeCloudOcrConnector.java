@@ -46,7 +46,8 @@ public class AsposeCloudOcrConnector implements IOcrConnector
             
             final OcrApiInvoker api = new ApiClient().createService(OcrApiInvoker.class);            
             byte []payload = readBytes(imageStream);
-            RequestBody requestBody = RequestBody.create( MediaType.parse("application/octet-stream"), payload);
+            MediaType mediaType = MediaType.parse("application/octet-stream");
+            RequestBody requestBody = RequestBody.create(payload, mediaType);
             Call<ResponseBody> call = api.RecognizeFromContent(requestBody, Language.English, ResultType.Internal, 
                     DsrMode.DsrAndFilter, DsrConfidence.Default);
             Response<ResponseBody> res = call.execute();

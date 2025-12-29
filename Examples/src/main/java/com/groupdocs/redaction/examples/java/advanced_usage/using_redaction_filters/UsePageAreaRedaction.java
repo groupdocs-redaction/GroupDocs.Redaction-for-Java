@@ -1,10 +1,11 @@
 package com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters;
 
-import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 
 import com.groupdocs.redaction.Redactor;
 import com.groupdocs.redaction.RedactionStatus;
 import com.groupdocs.redaction.RedactorChangeLog;
+import com.groupdocs.redaction.options.RasterizationOptions;
 import com.groupdocs.redaction.redactions.PageAreaRedaction;
 import com.groupdocs.redaction.redactions.ReplacementOptions;
 import com.groupdocs.redaction.redactions.RegionReplacementOptions;
@@ -21,7 +22,7 @@ public class UsePageAreaRedaction
 {
     public static void runPdf() throws java.lang.Exception
     {
-        final Redactor redactor = new Redactor(Constants.LOREMIPSUM_PDF);
+        final Redactor redactor = new Redactor(SampleFiles.LOREMIPSUM_PDF);
         try 
         {
             java.util.regex.Pattern rx = java.util.regex.Pattern.compile("urna");
@@ -34,7 +35,13 @@ public class UsePageAreaRedaction
             RedactorChangeLog result = redactor.apply(new PageAreaRedaction(rx, optionsText, optionsImg));
             if (result.getStatus() != RedactionStatus.Failed)
             {
-                redactor.save();
+                // Save to output folder
+                String outputPath = SampleFiles.getOutputFilePath("UsePageAreaRedaction_PDF", SampleFiles.LOREMIPSUM_PDF);
+                java.io.File outputFile = new java.io.File(outputPath);
+                outputFile.getParentFile().mkdirs();
+                try (java.io.FileOutputStream stream = new java.io.FileOutputStream(outputFile)) {
+                    redactor.save(stream);
+                }
             }                            
         }
         finally { redactor.close(); }
@@ -42,7 +49,7 @@ public class UsePageAreaRedaction
 
     public static void runPppt() throws java.lang.Exception
     {
-        final Redactor redactor = new Redactor(Constants.LOREMIPSUM_PPT);
+        final Redactor redactor = new Redactor(SampleFiles.LOREMIPSUM_PPT);
         try
         {
             java.util.regex.Pattern rx = java.util.regex.Pattern.compile("urna");
@@ -55,7 +62,16 @@ public class UsePageAreaRedaction
             RedactorChangeLog result = redactor.apply(new PageAreaRedaction(rx, optionsText, optionsImg));
             if (result.getStatus() != RedactionStatus.Failed)
             {
-                redactor.save();
+                // Configure rasterization options - don't rasterize, save in original format
+                RasterizationOptions rasterOptions = new RasterizationOptions();
+                rasterOptions.setEnabled(false);
+                // Save to output folder
+                String outputPath = SampleFiles.getOutputFilePath("UsePageAreaRedaction_PPT", SampleFiles.LOREMIPSUM_PPT);
+                java.io.File outputFile = new java.io.File(outputPath);
+                outputFile.getParentFile().mkdirs();
+                try (java.io.FileOutputStream stream = new java.io.FileOutputStream(outputFile)) {
+                    redactor.save(stream, rasterOptions);
+                }
             }
         }
         finally { redactor.close(); }

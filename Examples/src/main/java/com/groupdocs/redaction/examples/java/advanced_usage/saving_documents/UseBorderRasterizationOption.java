@@ -1,10 +1,10 @@
 package com.groupdocs.redaction.examples.java.advanced_usage.saving_documents;
 
-import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 
 import com.groupdocs.redaction.Redactor;
-import com.groupdocs.redaction.options.SaveOptions;
 import com.groupdocs.redaction.options.AdvancedRasterizationOptions;
+import com.groupdocs.redaction.options.RasterizationOptions;
 import com.groupdocs.redaction.redactions.ExactPhraseRedaction;
 import com.groupdocs.redaction.redactions.ReplacementOptions;
 
@@ -21,15 +21,21 @@ public class UseBorderRasterizationOption
 {
     public static void run() throws java.lang.Exception
     {
-        final Redactor redactor = new Redactor(Constants.MULTIPAGE_SAMPLE_DOCX);
+        final Redactor redactor = new Redactor(SampleFiles.MULTIPAGE_SAMPLE_DOCX);
         try 
         {
-            // Save the document with a custom border
-            SaveOptions so = new SaveOptions();
-            so.setRedactedFileSuffix("_scan");
-            so.getRasterization().setEnabled(true);
-            so.getRasterization().addAdvancedOption(AdvancedRasterizationOptions.Border, new HashMap<String, String>() { { put("border", "10"); } });
-            redactor.save(so);
+            // Configure rasterization options with a custom border
+            RasterizationOptions rasterOptions = new RasterizationOptions();
+            rasterOptions.setEnabled(true);
+            rasterOptions.addAdvancedOption(AdvancedRasterizationOptions.Border, new HashMap<String, String>() { { put("border", "10"); } });
+            // Save to output folder
+            String outputPath = SampleFiles.getOutputFilePath("UseBorderRasterizationOption", SampleFiles.MULTIPAGE_SAMPLE_DOCX);
+            outputPath = outputPath.replaceAll("\\.[^.]+$", ".pdf");
+            java.io.File outputFile = new java.io.File(outputPath);
+            outputFile.getParentFile().mkdirs();
+            try (java.io.FileOutputStream stream = new java.io.FileOutputStream(outputFile)) {
+                redactor.save(stream, rasterOptions);
+            }
         }
         finally { redactor.close(); }
     }

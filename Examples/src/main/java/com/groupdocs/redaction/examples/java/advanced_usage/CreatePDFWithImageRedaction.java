@@ -3,13 +3,14 @@ package com.groupdocs.redaction.examples.java.advanced_usage;
 import com.groupdocs.redaction.RedactionStatus;
 import com.groupdocs.redaction.Redactor;
 import com.groupdocs.redaction.RedactorChangeLog;
-import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 import com.groupdocs.redaction.options.RasterizationOptions;
 import com.groupdocs.redaction.redactions.ImageAreaRedaction;
 import com.groupdocs.redaction.redactions.RegionReplacementOptions;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileOutputStream;
 
 /**
@@ -23,7 +24,7 @@ public class CreatePDFWithImageRedaction
     {
         ByteArrayInputStream inputStream = null;
         // Rasterize the document before applying redactions
-        final Redactor raterizer = new Redactor(Constants.SAMPLE_DOCX);
+        final Redactor raterizer = new Redactor(SampleFiles.SAMPLE_DOCX);
         try 
         {
             // Perform annotation and textual redactions, if needed
@@ -45,14 +46,16 @@ public class CreatePDFWithImageRedaction
                     new RegionReplacementOptions(java.awt.Color.BLUE, new java.awt.Dimension(1050, 720))));
                 if (result.getStatus() != RedactionStatus.Failed)
                 {
-                    final FileOutputStream fileStream = new FileOutputStream("C:\\sample_raster.pdf");
-                    try 
-                    {
-                        RasterizationOptions options = new  RasterizationOptions();
+                    // Save to output folder
+                    String outputPath = SampleFiles.getOutputFilePath("CreatePDFWithImageRedaction", SampleFiles.SAMPLE_DOCX);
+                    outputPath = outputPath.replaceAll("\\.[^.]+$", "_raster.pdf");
+                    File outputFile = new File(outputPath);
+                    outputFile.getParentFile().mkdirs();
+                    try (FileOutputStream fileStream = new FileOutputStream(outputFile)) {
+                        RasterizationOptions options = new RasterizationOptions();
                         options.setEnabled(false);
                         redactor.save(fileStream, options);
                     }
-                    finally { fileStream.close(); }
                 }         
             }
             finally { redactor.close(); inputStream.close(); }

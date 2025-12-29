@@ -2,7 +2,7 @@ package com.groupdocs.redaction.examples.java.quick_start;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 import com.groupdocs.redaction.Redactor;
 import com.groupdocs.redaction.RedactorChangeLog;
 import com.groupdocs.redaction.redactions.ExactPhraseRedaction;
@@ -19,14 +19,14 @@ public class HelloWorld
     public static void run() throws java.lang.Exception
     {            
         // The path to the documents directory.
-        File outputFolder = new File(Constants.OutputPath, "HelloWorld");
+        File outputFolder = new File(SampleFiles.OutputPath, "HelloWorld");
         if (!outputFolder.exists())
         {
             outputFolder.mkdirs();
         }
-        File outputFile = new File(outputFolder, new File(Constants.SAMPLE_DOCX).getName());
+        File outputFile = new File(outputFolder, new File(SampleFiles.SAMPLE_DOCX).getName());
         // Apply a single redaction to a document
-        final Redactor redactor = new Redactor(Constants.SAMPLE_DOCX);
+        final Redactor redactor = new Redactor(SampleFiles.SAMPLE_DOCX);
         try 
         {
             // Do some redaction

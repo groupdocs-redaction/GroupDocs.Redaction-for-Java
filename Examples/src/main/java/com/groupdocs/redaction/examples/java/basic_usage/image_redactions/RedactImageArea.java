@@ -1,6 +1,6 @@
 package com.groupdocs.redaction.examples.java.basic_usage.image_redactions;
 
-import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 
 import com.groupdocs.redaction.*;
 import com.groupdocs.redaction.redactions.ImageAreaRedaction;
@@ -16,7 +16,7 @@ public class RedactImageArea
     public static void run() throws java.lang.Exception
     {
         //ExStart:ImageAreaRedaction_19.3
-        final Redactor redactor  = new Redactor(Constants.SAMPLE_JPG);
+        final Redactor redactor  = new Redactor(SampleFiles.SAMPLE_JPG);
         try 
         {
             //Define the position on image
@@ -30,8 +30,14 @@ public class RedactImageArea
                             new RegionReplacementOptions(java.awt.Color.BLUE, sampleSize)));
             if (result.getStatus() != RedactionStatus.Failed)
             {
-                //The redacted output will save as PDF 
-                redactor.save();
+                // Save to output folder as PDF (image redaction outputs as PDF)
+                String outputPath = SampleFiles.getOutputFilePath("RedactImageArea", SampleFiles.SAMPLE_JPG);
+                outputPath = outputPath.replaceAll("\\.[^.]+$", ".pdf");
+                java.io.File outputFile = new java.io.File(outputPath);
+                outputFile.getParentFile().mkdirs();
+                try (java.io.FileOutputStream stream = new java.io.FileOutputStream(outputFile)) {
+                    redactor.save(stream);
+                }
             };
         }
         finally { redactor.close(); }

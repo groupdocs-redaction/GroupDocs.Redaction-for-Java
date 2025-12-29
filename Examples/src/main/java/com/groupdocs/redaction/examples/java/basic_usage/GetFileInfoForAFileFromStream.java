@@ -1,7 +1,7 @@
 package com.groupdocs.redaction.examples.java.basic_usage;
 
 import com.groupdocs.redaction.*;
-import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 import java.io.FileInputStream;
 
 /**
@@ -13,7 +13,7 @@ public class GetFileInfoForAFileFromStream
 {
     public static void run() throws java.lang.Exception
     {
-        FileInputStream stream = new FileInputStream("D:\\Sample.docx");
+        FileInputStream stream = new FileInputStream(SampleFiles.SAMPLE_DOCX);
         final Redactor redactor = new Redactor(stream);
         try 
         {

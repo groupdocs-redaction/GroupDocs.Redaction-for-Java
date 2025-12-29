@@ -13,10 +13,10 @@ public class GetSupportedFileFormats
     public static void run() throws java.lang.Error
     {
         Iterable<FileType> supportedFileTypes = FileType.getSupportedFileTypes();
-        Iterator iterator = supportedFileTypes.iterator();      
+        Iterator<FileType> iterator = supportedFileTypes.iterator();      
         while (iterator.hasNext())
         {
-            FileType fileType = (FileType)iterator.next();
+            FileType fileType = iterator.next();
             System.out.println(fileType);
         }
     }

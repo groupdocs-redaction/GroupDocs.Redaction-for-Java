@@ -1,6 +1,6 @@
 package com.groupdocs.redaction.examples.java.advanced_usage.loading_documents;
 
-import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 
 import com.groupdocs.redaction.Redactor;
 import com.groupdocs.redaction.options.SaveOptions;
@@ -19,7 +19,7 @@ public class LoadFromStream
 {
     public static void run() throws java.lang.Exception
     {
-        final InputStream stream = new FileInputStream(Constants.SAMPLE_DOCX);
+        final InputStream stream = new FileInputStream(SampleFiles.SAMPLE_DOCX);
         try 
         {
             final Redactor redactor = new Redactor(stream);
@@ -27,12 +27,17 @@ public class LoadFromStream
             {
                 // Here we can use document instance to make redactions
                 redactor.apply(new DeleteAnnotationRedaction());
-                ByteArrayOutputStream bA = new ByteArrayOutputStream();
-                SaveOptions options = new SaveOptions();
-                options.setRasterizeToPDF(true);
-                options.setAddSuffix(true);
-                redactor.save(bA, options.getRasterization());
-                bA.close();
+                SaveOptions saveOptions = new SaveOptions();
+                saveOptions.setRasterizeToPDF(true);
+                saveOptions.setAddSuffix(true);
+                // Save to output folder
+                String outputPath = SampleFiles.getOutputFilePath("LoadFromStream", SampleFiles.SAMPLE_DOCX);
+                outputPath = outputPath.replaceAll("\\.[^.]+$", ".pdf");
+                java.io.File outputFile = new java.io.File(outputPath);
+                outputFile.getParentFile().mkdirs();
+                try (java.io.FileOutputStream fileStream = new java.io.FileOutputStream(outputFile)) {
+                    redactor.save(fileStream, saveOptions.getRasterization());
+                }
             }
             finally { redactor.close(); }
         }

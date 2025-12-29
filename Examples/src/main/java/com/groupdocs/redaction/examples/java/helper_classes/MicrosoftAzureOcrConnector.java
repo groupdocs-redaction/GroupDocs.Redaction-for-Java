@@ -86,7 +86,7 @@ public class MicrosoftAzureOcrConnector implements IOcrConnector
                 catch (java.lang.Exception ex)
                 {
                     // MS Azure Cognintive services reports 400 Bad requests and other exceptions on small pictures and pictures with no text
-                    System.out.println("Microsoft Azure Cognitive Services consider this image as wrong: " + ex.toString());
+                    System.out.println("Failed to recognize image: " + ex.toString());
                 } 
                 if (stringResponse != null) {
                     return createDtoFromResponse(new JSONObject(stringResponse));

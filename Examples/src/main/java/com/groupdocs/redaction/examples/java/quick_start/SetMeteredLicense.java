@@ -1,6 +1,7 @@
 package com.groupdocs.redaction.examples.java.quick_start;
 
 import com.groupdocs.redaction.examples.java.Constants;
+import com.groupdocs.redaction.examples.java.SampleFiles;
 
 import com.groupdocs.redaction.*;
 import com.groupdocs.redaction.licensing.Metered;
@@ -19,15 +20,21 @@ public class SetMeteredLicense
 {
     public static void run() throws java.lang.Exception
     {
+        // Check if keys are set (not placeholder values)
+        if (Constants.MeteredPublicKey == null || Constants.MeteredPrivateKey == null ) {
+            System.out.println("Metered license keys are not set. Please update Constants.MeteredPublicKey and Constants.MeteredPrivateKey with your actual metered license credentials.");
+            return;
+        }
+        
         // initialize Metered API
         Metered metered = new Metered();
         // set-up credentials
-        metered.setMeteredKey(Constants.PublicKey, Constants.PrivateKey);
+        metered.setMeteredKey(Constants.MeteredPublicKey, Constants.MeteredPrivateKey);
 
         // do some work:
 
         // Load Word document
-        final Redactor redactor = new Redactor(Constants.CONVERSION_CONTROL_DOCX);
+        final Redactor redactor = new Redactor(SampleFiles.CONVERSION_CONTROL_DOCX);
         try 
         {
             // Do some redaction
