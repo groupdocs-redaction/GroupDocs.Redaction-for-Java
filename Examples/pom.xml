@@ -7,7 +7,7 @@
 
     <groupId>GroupDocs.Redaction-for-Java</groupId>
     <artifactId>GroupDocs.Redaction-for-Java</artifactId>
-    <version>25.12</version>
+    <version>26.7</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -58,7 +58,7 @@
         <dependency>
             <groupId>com.groupdocs</groupId>
             <artifactId>groupdocs-redaction</artifactId>
-            <version>25.12</version>
+            <version>26.7</version>
         </dependency>
     </dependencies>
 
