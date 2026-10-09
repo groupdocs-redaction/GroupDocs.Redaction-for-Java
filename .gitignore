@@ -4,6 +4,7 @@
 ~
 .m2
 /Examples/target/
+/Examples/META-INF/
 /Examples/.idea
 deploy_key
 .lic

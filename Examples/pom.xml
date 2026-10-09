@@ -7,14 +7,13 @@
 
     <groupId>GroupDocs.Redaction-for-Java</groupId>
     <artifactId>GroupDocs.Redaction-for-Java</artifactId>
-    <version>26.7</version>
+    <version>26.10</version>
     <packaging>jar</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.release>8</maven.compiler.release>
         <maven.compiler.version>3.11.0</maven.compiler.version>
     </properties>
 
@@ -58,7 +57,7 @@
         <dependency>
             <groupId>com.groupdocs</groupId>
             <artifactId>groupdocs-redaction</artifactId>
-            <version>26.7</version>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

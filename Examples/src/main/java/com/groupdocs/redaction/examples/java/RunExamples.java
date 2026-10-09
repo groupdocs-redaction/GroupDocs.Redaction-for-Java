@@ -19,6 +19,7 @@ import com.groupdocs.redaction.examples.java.advanced_usage.loading_documents.*;
 import com.groupdocs.redaction.examples.java.advanced_usage.saving_documents.*;
 import com.groupdocs.redaction.examples.java.advanced_usage.using_ocr.*;
 import com.groupdocs.redaction.examples.java.advanced_usage.using_redaction_filters.*;
+import com.groupdocs.redaction.examples.java.advanced_usage.custom_redaction.*;
 
 @FunctionalInterface
 interface RunnableWithException {
@@ -99,6 +100,7 @@ public class RunExamples
         runExample("LoadFromLocalDisc", handleRun(() -> LoadFromLocalDisc.run()));
         runExample("LoadFromStream", handleRun(() -> LoadFromStream.run()));
         runExample("LoadPasswordProtectedFile", handleRun(() -> LoadPasswordProtectedFile.run()));
+        runExample("LoadWithFileType", handleRun(() -> LoadWithFileType.run()));
         runExample("PreRasterize", handleRun(() -> PreRasterize.run()));
         runExample("UseAdvancedLogging", handleRun(() -> UseAdvancedLogging.run()));
 
@@ -108,10 +110,12 @@ public class RunExamples
         runExample("SaveOverwritingOriginalFile", handleRun(() -> SaveOverwritingOriginalFile.run()));
         runExample("SaveToStream", handleRun(() -> SaveToStream.run()));
         runExample("SaveWithDefaultOptions", handleRun(() -> SaveWithDefaultOptions.run()));
+        runExample("SaveWordWithOoxmlCompliance", handleRun(() -> SaveWordWithOoxmlCompliance.run()));
         runExample("SelectSpecificPagesForRasterizedPDF", handleRun(() -> SelectSpecificPagesForRasterizedPDF.run()));
         runExample("UseAdvancedRasterizationOptions", handleRun(() -> UseAdvancedRasterizationOptions.run()));
         runExample("UseBorderRasterizationOption", handleRun(() -> UseBorderRasterizationOption.run()));
         runExample("UseGrayscaleRasterizationOption", handleRun(() -> UseGrayscaleRasterizationOption.run()));
+        runExample("UseNoiseRasterizationOption", handleRun(() -> UseNoiseRasterizationOption.run()));
         runExample("UseTiltRasterizationOption", handleRun(() -> UseTiltRasterizationOption.run()));
 
         // Advanced Usage - Using OCR
@@ -122,6 +126,10 @@ public class RunExamples
         runExample("UsePdfRedactionFilters", handleRun(() -> UsePdfRedactionFilters.run()));
         runExample("UsePageAreaRedaction (PDF)", handleRun(() -> UsePageAreaRedaction.runPdf()));
         runExample("UsePageAreaRedaction (PPT)", handleRun(() -> UsePageAreaRedaction.runPppt()));
+
+        // Advanced Usage - Custom Redaction
+        runExample("CustomRedaction", handleRun(() -> CustomRedaction.run()));
+        runExample("CustomRedactionAI", handleRun(() -> CustomRedactionAI.run()));
 
         // Advanced Usage - Other Features
         runExample("ExtendSupportedExtensionsList", handleRun(() -> ExtendSupportedExtensionsList.run()));
