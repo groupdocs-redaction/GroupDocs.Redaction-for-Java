@@ -1,0 +1,18 @@
+# GroupDocs.Redaction for Java examples
+
+Runnable examples: https://github.com/groupdocs-redaction/GroupDocs.Redaction-for-Java
+
+Package: com.groupdocs:groupdocs-redaction
+Maven repository: https://releases.groupdocs.com/java/repo/
+Docs: https://docs.groupdocs.com/redaction/java/
+API reference: https://reference.groupdocs.com/redaction/java/
+
+From Examples/:
+
+- mvn clean install
+- mvn compile exec:java
+
+JDK 8 or later. README recommends 17 LTS.
+A license is required for a full run: https://purchase.groupdocs.com/temp-license/100510
+
+Open Redactor, apply, save, close. Do not use a LATEST version pin.
